@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ContactUsViewController.h
 //  Split_Application
 //
 //  Created by Tarek Qawasmi on 25/11/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface ContactUsViewController : UIViewController
 
 @end
-

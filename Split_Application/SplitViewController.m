@@ -6,13 +6,13 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "SplitViewController.h"
 
-@interface SecondViewController ()
+@interface SplitViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation SplitViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

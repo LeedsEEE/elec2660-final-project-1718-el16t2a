@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F52B89221FC98DC0009D470E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89211FC98DC0009D470E /* AppDelegate.m */; };
-		F52B89251FC98DC0009D470E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89241FC98DC0009D470E /* FirstViewController.m */; };
-		F52B89281FC98DC0009D470E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89271FC98DC0009D470E /* SecondViewController.m */; };
+		F52B89251FC98DC0009D470E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89241FC98DC0009D470E /* MenuViewController.m */; };
+		F52B89281FC98DC0009D470E /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89271FC98DC0009D470E /* SplitViewController.m */; };
 		F52B892B1FC98DC0009D470E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52B89291FC98DC0009D470E /* Main.storyboard */; };
 		F52B892D1FC98DC0009D470E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52B892C1FC98DC0009D470E /* Assets.xcassets */; };
 		F52B89301FC98DC0009D470E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52B892E1FC98DC0009D470E /* LaunchScreen.storyboard */; };
 		F52B89331FC98DC0009D470E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89321FC98DC0009D470E /* main.m */; };
 		F52B893D1FC98DC0009D470E /* Split_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B893C1FC98DC0009D470E /* Split_ApplicationTests.m */; };
 		F52B89481FC98DC0009D470E /* Split_ApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89471FC98DC0009D470E /* Split_ApplicationUITests.m */; };
+		F52B895D1FC99944009D470E /* BillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895C1FC99944009D470E /* BillsViewController.m */; };
+		F52B89601FC99985009D470E /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895F1FC99985009D470E /* ContactUsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +41,10 @@
 		F52B891D1FC98DC0009D470E /* Split_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Split_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52B89201FC98DC0009D470E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F52B89211FC98DC0009D470E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F52B89231FC98DC0009D470E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F52B89241FC98DC0009D470E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		F52B89261FC98DC0009D470E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F52B89271FC98DC0009D470E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F52B89231FC98DC0009D470E /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		F52B89241FC98DC0009D470E /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		F52B89261FC98DC0009D470E /* SplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewController.h; sourceTree = "<group>"; };
+		F52B89271FC98DC0009D470E /* SplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewController.m; sourceTree = "<group>"; };
 		F52B892A1FC98DC0009D470E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F52B892C1FC98DC0009D470E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F52B892F1FC98DC0009D470E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,10 @@
 		F52B89431FC98DC0009D470E /* Split_ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Split_ApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52B89471FC98DC0009D470E /* Split_ApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Split_ApplicationUITests.m; sourceTree = "<group>"; };
 		F52B89491FC98DC0009D470E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52B895B1FC99944009D470E /* BillsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillsViewController.h; sourceTree = "<group>"; };
+		F52B895C1FC99944009D470E /* BillsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillsViewController.m; sourceTree = "<group>"; };
+		F52B895E1FC99985009D470E /* ContactUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
+		F52B895F1FC99985009D470E /* ContactUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +110,17 @@
 		F52B891F1FC98DC0009D470E /* Split_Application */ = {
 			isa = PBXGroup;
 			children = (
+				F52B89291FC98DC0009D470E /* Main.storyboard */,
 				F52B89201FC98DC0009D470E /* AppDelegate.h */,
 				F52B89211FC98DC0009D470E /* AppDelegate.m */,
-				F52B89231FC98DC0009D470E /* FirstViewController.h */,
-				F52B89241FC98DC0009D470E /* FirstViewController.m */,
-				F52B89261FC98DC0009D470E /* SecondViewController.h */,
-				F52B89271FC98DC0009D470E /* SecondViewController.m */,
-				F52B89291FC98DC0009D470E /* Main.storyboard */,
+				F52B89231FC98DC0009D470E /* MenuViewController.h */,
+				F52B89241FC98DC0009D470E /* MenuViewController.m */,
+				F52B89261FC98DC0009D470E /* SplitViewController.h */,
+				F52B89271FC98DC0009D470E /* SplitViewController.m */,
+				F52B895B1FC99944009D470E /* BillsViewController.h */,
+				F52B895C1FC99944009D470E /* BillsViewController.m */,
+				F52B895E1FC99985009D470E /* ContactUsViewController.h */,
+				F52B895F1FC99985009D470E /* ContactUsViewController.m */,
 				F52B892C1FC98DC0009D470E /* Assets.xcassets */,
 				F52B892E1FC98DC0009D470E /* LaunchScreen.storyboard */,
 				F52B89311FC98DC0009D470E /* Info.plist */,
@@ -270,10 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52B89281FC98DC0009D470E /* SecondViewController.m in Sources */,
+				F52B895D1FC99944009D470E /* BillsViewController.m in Sources */,
+				F52B89281FC98DC0009D470E /* SplitViewController.m in Sources */,
 				F52B89221FC98DC0009D470E /* AppDelegate.m in Sources */,
+				F52B89601FC99985009D470E /* ContactUsViewController.m in Sources */,
 				F52B89331FC98DC0009D470E /* main.m in Sources */,
-				F52B89251FC98DC0009D470E /* FirstViewController.m in Sources */,
+				F52B89251FC98DC0009D470E /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
