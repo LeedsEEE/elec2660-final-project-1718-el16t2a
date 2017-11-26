@@ -10,4 +10,9 @@
 
 @interface MenuElement : NSObject
 
+@property (nonatomic,strong)NSString*Type;
+@property (nonatomic,strong)NSString*Name;
+@property (nonatomic,strong)NSString*Ingredients;
+@property NSInteger*Price;
+
 @end

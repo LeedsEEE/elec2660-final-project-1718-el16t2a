@@ -20,6 +20,7 @@
 		F52B89601FC99985009D470E /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895F1FC99985009D470E /* ContactUsViewController.m */; };
 		F52B89631FCB336B009D470E /* MenuTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89621FCB336B009D470E /* MenuTableTableViewController.m */; };
 		F52B89661FCB3973009D470E /* MenuElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89651FCB3973009D470E /* MenuElement.m */; };
+		F52B89691FCB3BF7009D470E /* MenuDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89681FCB3BF7009D470E /* MenuDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		F52B89621FCB336B009D470E /* MenuTableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableTableViewController.m; sourceTree = "<group>"; };
 		F52B89641FCB3973009D470E /* MenuElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuElement.h; sourceTree = "<group>"; };
 		F52B89651FCB3973009D470E /* MenuElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuElement.m; sourceTree = "<group>"; };
+		F52B89671FCB3BF7009D470E /* MenuDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuDataModel.h; sourceTree = "<group>"; };
+		F52B89681FCB3BF7009D470E /* MenuDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuDataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,14 +120,16 @@
 			isa = PBXGroup;
 			children = (
 				F52B89291FC98DC0009D470E /* Main.storyboard */,
-				F52B89641FCB3973009D470E /* MenuElement.h */,
-				F52B89651FCB3973009D470E /* MenuElement.m */,
 				F52B89201FC98DC0009D470E /* AppDelegate.h */,
 				F52B89211FC98DC0009D470E /* AppDelegate.m */,
 				F52B89231FC98DC0009D470E /* MenuViewController.h */,
 				F52B89241FC98DC0009D470E /* MenuViewController.m */,
 				F52B89611FCB336B009D470E /* MenuTableTableViewController.h */,
 				F52B89621FCB336B009D470E /* MenuTableTableViewController.m */,
+				F52B89641FCB3973009D470E /* MenuElement.h */,
+				F52B89651FCB3973009D470E /* MenuElement.m */,
+				F52B89671FCB3BF7009D470E /* MenuDataModel.h */,
+				F52B89681FCB3BF7009D470E /* MenuDataModel.m */,
 				F52B89261FC98DC0009D470E /* SplitViewController.h */,
 				F52B89271FC98DC0009D470E /* SplitViewController.m */,
 				F52B895B1FC99944009D470E /* BillsViewController.h */,
@@ -292,6 +297,7 @@
 			files = (
 				F52B895D1FC99944009D470E /* BillsViewController.m in Sources */,
 				F52B89281FC98DC0009D470E /* SplitViewController.m in Sources */,
+				F52B89691FCB3BF7009D470E /* MenuDataModel.m in Sources */,
 				F52B89221FC98DC0009D470E /* AppDelegate.m in Sources */,
 				F52B89631FCB336B009D470E /* MenuTableTableViewController.m in Sources */,
 				F52B89601FC99985009D470E /* ContactUsViewController.m in Sources */,
