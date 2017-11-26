@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.data = [[MenuDataModel alloc] init];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -33,23 +35,33 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+   
+    NSInteger  numberOfRows;
+    if(section == 0) {
+        numberOfRows= self.data.AppetizerElement.count ; }
+    
+    return  numberOfRows;
 }
 
-/*
+//
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuElementCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+ 
+    if (indexPath.section == 0 ) {
+        MenuElement*tempMenuElement = [self.data.AppetizerElement objectAtIndex:indexPath.row];
+ 
+        cell.textLabel.text=tempMenuElement.Name;
+    }
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

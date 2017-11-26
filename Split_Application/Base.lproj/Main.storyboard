@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-3396" y="-1548"/>
         </scene>
-        <!--Menu Table Table View Controller-->
+        <!--Item-->
         <scene sceneID="AgN-wc-0Fh">
             <objects>
                 <tableViewController id="1rG-Zc-2eJ" customClass="MenuTableTableViewController" sceneMemberID="viewController">
@@ -51,6 +51,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="9pv-A4-QxB" kind="show" id="V9p-3a-Iar"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -58,6 +61,7 @@
                             <outlet property="delegate" destination="1rG-Zc-2eJ" id="x6P-hT-37k"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Qqs-vE-Cdb"/>
                     <navigationItem key="navigationItem" id="Pzb-bM-zj2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCK-ax-AEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -138,10 +142,10 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="J1m-8M-C1L" kind="relationship" relationship="viewControllers" id="7R8-7R-Dc7"/>
                         <segue destination="QPw-gP-MBV" kind="relationship" relationship="viewControllers" id="RuY-6j-8pX"/>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="1LD-3U-2Ua"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -153,4 +157,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="V9p-3a-Iar"/>
+    </inferredMetricsTieBreakers>
 </document>

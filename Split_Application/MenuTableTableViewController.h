@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenuDataModel.h"
 
 @interface MenuTableTableViewController : UITableViewController
+
+@property (strong,nonatomic)MenuDataModel*data; 
 
 @end
