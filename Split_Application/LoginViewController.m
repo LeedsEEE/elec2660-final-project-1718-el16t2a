@@ -26,8 +26,8 @@
 
 #pragma mark : to set username
 
-    self.username = @"Restaurant";
-    self.password = @"restaurant123";
+    self.username = @"1";
+    self.password = @"2";
     
     self.PasswordTextField.secureTextEntry = YES ;
 }
@@ -36,11 +36,18 @@
     
     BOOL isUsersEqual = [self.username isEqualToString:[self.UsernameTextField text]];
     BOOL isPasswordsEqual = [self.password isEqualToString:[self.PasswordTextField text]];
+    NSLog(@"%d  %d",isUsersEqual,isPasswordsEqual);
     
     if (isUsersEqual && isPasswordsEqual) {
-        //NSLog(@"logging in ...")
+        NSLog(@"logging in ...");
         [self.NotificationLabel setText:@"Logging in ..."];
-        [self performSegueWithIdentifier:@"login" sender:self];
+        //[self performSegueWithIdentifier:@"login" sender:self];
+        
+        NSString * storyboardName = @"Main"; // Main.storyboard
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+        UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"main_program"]; //identifier given to the next wanted screen
+        [self presentViewController:vc animated:YES completion:nil];
+        
     }
     else {
         [self.NotificationLabel setText:@"Username or password incorrect!"];
