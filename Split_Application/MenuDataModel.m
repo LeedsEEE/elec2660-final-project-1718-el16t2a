@@ -17,7 +17,7 @@
     self = [super init];
     if (self) {
         
-        self.AppetizerElement = [NSMutableArray array]; //Set up our array
+        self.AppetizerElement = [NSMutableArray array]; //Set up an empty array for us to fill
         MenuElement*GB = [[MenuElement alloc] init] ; //GarlicBread
         GB.Type = @"Appetizer";
         GB.Name = @"Garlic Bread";
@@ -27,6 +27,16 @@
         
         //Now we need to add the objects above in the array
         [self.AppetizerElement addObject:GB];
+        
+        self.BurgerElement = [NSMutableArray array];
+        MenuElement*BBQB = [[MenuElement alloc] init] ; //GarlicBread
+        BBQB.Type = @"Burger";
+        BBQB.Name = @"bbq burger";
+        BBQB.Ingredients = @"Garlic on bread with our secret recepee";
+        BBQB.Price = 4;
+        
+        //Now we need to add the objects above in the array
+        [self.AppetizerElement addObject:BBQB];
     }
     return self;
 }

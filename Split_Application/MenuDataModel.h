@@ -11,5 +11,8 @@
 
 @interface MenuDataModel : NSObject
 
-@property (strong,nonatomic)NSMutableArray* AppetizerElement;// Array to store our elements in (array of indefinite length)
+@property (strong,nonatomic)NSMutableArray* AppetizerElement;// Array to store our appetizers in (array of indefinite length)
+
+@property (strong,nonatomic)NSMutableArray* BurgerElement;// Array to store our appetizers in (array of indefinite length)
+
 @end

@@ -34,29 +34,47 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 1;
+
+    return 2; //to be 6 later
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
    
     NSInteger  numberOfRows;
+
     if(section == 0) {
-        numberOfRows= self.data.AppetizerElement.count ; }
+        numberOfRows= self.data.AppetizerElement.count ;
+    }
+    
+    if(section == 1) {
+        numberOfRows= self.data.AppetizerElement.count ;
+    }
+    
     
     return  numberOfRows;
 }
 
-//
+-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+   
+    return [NSString stringWithFormat:@"Level %ld Modules",section+1];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuElementCell" forIndexPath:indexPath];
     
     // Configure the cell...
  
-    if (indexPath.section == 0 ) {
+    // We create a temporary model object to have the information from MenuDataModel while we add it to the cell
+    
+    if (indexPath.section == 0 ) /* appetizer correspond to section 0 */ {
         MenuElement*tempMenuElement = [self.data.AppetizerElement objectAtIndex:indexPath.row];
  
+        cell.textLabel.text=tempMenuElement.Name;
+    }
+    
+    if (indexPath.section == 1 ) /*  correspond to section 1 */ {
+        MenuElement*tempMenuElement = [self.data.BurgerElement objectAtIndex:indexPath.row];
+        
         cell.textLabel.text=tempMenuElement.Name;
     }
     return cell;
