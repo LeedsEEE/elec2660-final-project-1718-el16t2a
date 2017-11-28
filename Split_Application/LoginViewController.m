@@ -40,6 +40,7 @@
     if (isUsersEqual && isPasswordsEqual) {
         //NSLog(@"logging in ...")
         [self.NotificationLabel setText:@"Logging in ..."];
+        [self performSegueWithIdentifier:@"login" sender:self];
     }
     else {
         [self.NotificationLabel setText:@"Username or password incorrect!"];

@@ -59,6 +59,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="LoginPressed:" destination="wiu-Tf-nz5" eventType="touchUpInside" id="ddL-bC-dlA"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" identifier="Login" id="HZr-JQ-CBl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRW-Ls-w1a">
@@ -87,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E99-tm-qjo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3396" y="-2648.7256371814096"/>
+            <point key="canvasLocation" x="-5042" y="-488"/>
         </scene>
         <!--Menu-->
         <scene sceneID="FYU-aa-yqV">
