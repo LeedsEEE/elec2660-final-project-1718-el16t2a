@@ -54,9 +54,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLW-To-aAb">
-                                <rect key="frame" x="164" y="534" width="46" height="30"/>
+                                <rect key="frame" x="164" y="533" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="LoginPressed:" destination="wiu-Tf-nz5" eventType="touchUpInside" id="ddL-bC-dlA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRW-Ls-w1a">
                                 <rect key="frame" x="146" y="20" width="83" height="21"/>
@@ -77,6 +80,7 @@
                         <viewLayoutGuide key="safeArea" id="pZV-D1-kXG"/>
                     </view>
                     <connections>
+                        <outlet property="NotificationLabel" destination="JGA-G8-Gh0" id="AaG-Ln-jk4"/>
                         <outlet property="PasswordTextField" destination="W1Q-kY-qok" id="Eii-Hy-JUZ"/>
                         <outlet property="UsernameTextField" destination="Sie-1R-Sdw" id="toS-X6-NUY"/>
                     </connections>

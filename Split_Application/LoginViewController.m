@@ -14,6 +14,7 @@
 @property (nonatomic,strong) NSString *password;
 @property (weak, nonatomic) IBOutlet UITextField *UsernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *PasswordTextField;
+@property (weak, nonatomic) IBOutlet UILabel *NotificationLabel;
 
 @end
 
@@ -30,6 +31,21 @@
     
     self.PasswordTextField.secureTextEntry = YES ;
 }
+
+- (IBAction)LoginPressed:(id)sender {
+    
+    BOOL isUsersEqual = [self.username isEqualToString:[self.UsernameTextField text]];
+    BOOL isPasswordsEqual = [self.password isEqualToString:[self.PasswordTextField text]];
+    
+    if (isUsersEqual && isPasswordsEqual) {
+        //NSLog(@"logging in ...")
+        [self.NotificationLabel setText:@"Logging in ..."];
+    }
+    else {
+        [self.NotificationLabel setText:@"Username or password incorrect!"];
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
