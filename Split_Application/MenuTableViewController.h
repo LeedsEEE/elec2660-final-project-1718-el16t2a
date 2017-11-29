@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MElementDataModel.h" //we import this file and also we create a property because in .m we will use its method
 
 @interface MenuTableViewController : UITableViewController
+
+@property (strong,nonatomic) MElementDataModel *data; // let's acces the data we stored 
 
 @end

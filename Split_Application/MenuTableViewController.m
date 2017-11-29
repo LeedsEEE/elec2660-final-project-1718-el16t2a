@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.data = [[MElementDataModel alloc] init];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -37,16 +39,29 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 1;
+//#warning Incomplete implementation, return the number of rows
+//    return 1;
+    
+    // returns number of rows in this section
+    NSInteger numberOfRows;
+    if (section == 0) {
+        numberOfRows = self.data.Appetizers.count;
+    }
+    return numberOfRows;
 }
 
 // This method supplies the data source with a cell to use
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    
+    if(indexPath.section == 0) {
+        Menu_Element *tempMenu_element = [self.data.Appetizers objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = tempMenu_element.name;
+        cell.detailTextLabel.text = tempMenu_element.type; 
+    }
     
     return cell;
 }
