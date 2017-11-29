@@ -56,9 +56,11 @@
     
     // Configure the cell...
     
-    if(indexPath.section == 0) {
-        Menu_Element *tempMenu_element = [self.data.Appetizers objectAtIndex:indexPath.row];
+    // Grabs data from menu element array and displays it in the cells
+    if(indexPath.section == 0) { //Appetizers
+        Menu_Element *tempMenu_element = [self.data.Appetizers objectAtIndex:indexPath.row]; // we need to create a  temporary object in which to hold the information from our menudatamodel while                                                                                      we apply it to the cell
         
+        //once we have the object, we can use it's data to set the text labels in each cell
         cell.textLabel.text = tempMenu_element.name;
         cell.detailTextLabel.text = tempMenu_element.type; 
     }
