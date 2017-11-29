@@ -43,13 +43,14 @@
         [self.NotificationLabel setText:@"Logging in ..."];
         //[self performSegueWithIdentifier:@"login" sender:self];
         
+        //when log in is pressed it takes us to the application
         NSString * storyboardName = @"Main"; // Main.storyboard
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
         UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"main_program"]; //identifier given to the next wanted screen
         [self presentViewController:vc animated:YES completion:nil];
         
     }
-    else {
+    else { // when username and password don't match the entered information :
         [self.NotificationLabel setText:@"Username or password incorrect!"];
     }
 }
