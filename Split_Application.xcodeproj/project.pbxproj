@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F52B89221FC98DC0009D470E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89211FC98DC0009D470E /* AppDelegate.m */; };
-		F52B89251FC98DC0009D470E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89241FC98DC0009D470E /* MenuViewController.m */; };
 		F52B89281FC98DC0009D470E /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89271FC98DC0009D470E /* SplitViewController.m */; };
 		F52B892B1FC98DC0009D470E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52B89291FC98DC0009D470E /* Main.storyboard */; };
 		F52B892D1FC98DC0009D470E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52B892C1FC98DC0009D470E /* Assets.xcassets */; };
@@ -18,9 +17,7 @@
 		F52B89481FC98DC0009D470E /* Split_ApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89471FC98DC0009D470E /* Split_ApplicationUITests.m */; };
 		F52B895D1FC99944009D470E /* BillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895C1FC99944009D470E /* BillsViewController.m */; };
 		F52B89601FC99985009D470E /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895F1FC99985009D470E /* ContactUsViewController.m */; };
-		F52B89631FCB336B009D470E /* MenuTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89621FCB336B009D470E /* MenuTableTableViewController.m */; };
-		F52B89661FCB3973009D470E /* MenuElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89651FCB3973009D470E /* MenuElement.m */; };
-		F52B89691FCB3BF7009D470E /* MenuDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89681FCB3BF7009D470E /* MenuDataModel.m */; };
+		F5C61FBE1FCF494300604CDA /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */; };
 		F5C6DEC11FCD4A9700B5DAAE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C6DEBF1FCD4A8C00B5DAAE /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +42,6 @@
 		F52B891D1FC98DC0009D470E /* Split_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Split_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52B89201FC98DC0009D470E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F52B89211FC98DC0009D470E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F52B89231FC98DC0009D470E /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		F52B89241FC98DC0009D470E /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		F52B89261FC98DC0009D470E /* SplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewController.h; sourceTree = "<group>"; };
 		F52B89271FC98DC0009D470E /* SplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewController.m; sourceTree = "<group>"; };
 		F52B892A1FC98DC0009D470E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,12 +59,8 @@
 		F52B895C1FC99944009D470E /* BillsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillsViewController.m; sourceTree = "<group>"; };
 		F52B895E1FC99985009D470E /* ContactUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
 		F52B895F1FC99985009D470E /* ContactUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
-		F52B89611FCB336B009D470E /* MenuTableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableTableViewController.h; sourceTree = "<group>"; };
-		F52B89621FCB336B009D470E /* MenuTableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableTableViewController.m; sourceTree = "<group>"; };
-		F52B89641FCB3973009D470E /* MenuElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuElement.h; sourceTree = "<group>"; };
-		F52B89651FCB3973009D470E /* MenuElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuElement.m; sourceTree = "<group>"; };
-		F52B89671FCB3BF7009D470E /* MenuDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuDataModel.h; sourceTree = "<group>"; };
-		F52B89681FCB3BF7009D470E /* MenuDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuDataModel.m; sourceTree = "<group>"; };
+		F5C61FBC1FCF494300604CDA /* MenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		F5C6DEBE1FCD4A8C00B5DAAE /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F5C6DEBF1FCD4A8C00B5DAAE /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,19 +113,13 @@
 		F52B891F1FC98DC0009D470E /* Split_Application */ = {
 			isa = PBXGroup;
 			children = (
+				F52B89201FC98DC0009D470E /* AppDelegate.h */,
+				F52B89211FC98DC0009D470E /* AppDelegate.m */,
 				F5C6DEBE1FCD4A8C00B5DAAE /* LoginViewController.h */,
 				F5C6DEBF1FCD4A8C00B5DAAE /* LoginViewController.m */,
 				F52B89291FC98DC0009D470E /* Main.storyboard */,
-				F52B89201FC98DC0009D470E /* AppDelegate.h */,
-				F52B89211FC98DC0009D470E /* AppDelegate.m */,
-				F52B89231FC98DC0009D470E /* MenuViewController.h */,
-				F52B89241FC98DC0009D470E /* MenuViewController.m */,
-				F52B89611FCB336B009D470E /* MenuTableTableViewController.h */,
-				F52B89621FCB336B009D470E /* MenuTableTableViewController.m */,
-				F52B89641FCB3973009D470E /* MenuElement.h */,
-				F52B89651FCB3973009D470E /* MenuElement.m */,
-				F52B89671FCB3BF7009D470E /* MenuDataModel.h */,
-				F52B89681FCB3BF7009D470E /* MenuDataModel.m */,
+				F5C61FBC1FCF494300604CDA /* MenuTableViewController.h */,
+				F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */,
 				F52B89261FC98DC0009D470E /* SplitViewController.h */,
 				F52B89271FC98DC0009D470E /* SplitViewController.m */,
 				F52B895B1FC99944009D470E /* BillsViewController.h */,
@@ -302,14 +287,11 @@
 			files = (
 				F52B895D1FC99944009D470E /* BillsViewController.m in Sources */,
 				F52B89281FC98DC0009D470E /* SplitViewController.m in Sources */,
-				F52B89691FCB3BF7009D470E /* MenuDataModel.m in Sources */,
 				F52B89221FC98DC0009D470E /* AppDelegate.m in Sources */,
 				F5C6DEC11FCD4A9700B5DAAE /* LoginViewController.m in Sources */,
-				F52B89631FCB336B009D470E /* MenuTableTableViewController.m in Sources */,
 				F52B89601FC99985009D470E /* ContactUsViewController.m in Sources */,
+				F5C61FBE1FCF494300604CDA /* MenuTableViewController.m in Sources */,
 				F52B89331FC98DC0009D470E /* main.m in Sources */,
-				F52B89251FC98DC0009D470E /* MenuViewController.m in Sources */,
-				F52B89661FCB3973009D470E /* MenuElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
