@@ -124,7 +124,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="iE0-qn-gPz" kind="show" id="ruT-Yj-NwL"/>
+                                    <segue destination="iE0-qn-gPz" kind="show" identifier="ShowElementDetails" id="ruT-Yj-NwL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -157,11 +157,11 @@
             </objects>
             <point key="canvasLocation" x="-3538" y="-1525"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Menu-->
         <scene sceneID="xMa-Ch-WaX">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhY-Bq-41w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="iE0-qn-gPz" sceneMemberID="viewController">
+                <viewController id="iE0-qn-gPz" customClass="ViewControllerMenu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VfL-LA-HWD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,8 +187,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mm4-Et-pOO">
-                                <rect key="frame" x="166" y="462" width="39" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mm4-Et-pOO">
+                                <rect key="frame" x="144" y="460" width="86" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -198,9 +198,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="o4u-iE-BTL"/>
                     </view>
+                    <connections>
+                        <outlet property="ingredientsLabel" destination="Mm4-Et-pOO" id="deR-yO-Osi"/>
+                        <outlet property="nameLabel" destination="Xuf-xX-PjP" id="TOE-hz-12Y"/>
+                        <outlet property="priceLabel" destination="1oZ-eA-nsz" id="dRc-d9-tmU"/>
+                        <outlet property="typeLabel" destination="Gjv-xD-eos" id="a9f-Yt-aTW"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-1678" y="-1525"/>
+            <point key="canvasLocation" x="-1679.2" y="-1525.1874062968518"/>
         </scene>
         <!--Split-->
         <scene sceneID="wg7-f3-ORb">

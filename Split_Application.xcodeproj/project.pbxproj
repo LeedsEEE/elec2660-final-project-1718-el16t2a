@@ -20,6 +20,7 @@
 		F5C61FBE1FCF494300604CDA /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */; };
 		F5C61FC11FCF494300604CDA /* Menu_Element.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FC01FCF494300604CDA /* Menu_Element.m */; };
 		F5C61FC41FCF494300604CDA /* MElementDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FC31FCF494300604CDA /* MElementDataModel.m */; };
+		F5C61FCC1FCF6EED00604CDA /* ViewControllerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FCB1FCF6EED00604CDA /* ViewControllerMenu.m */; };
 		F5C6DEC11FCD4A9700B5DAAE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C6DEBF1FCD4A8C00B5DAAE /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		F5C61FC01FCF494300604CDA /* Menu_Element.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menu_Element.m; sourceTree = "<group>"; };
 		F5C61FC21FCF494300604CDA /* MElementDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MElementDataModel.h; sourceTree = "<group>"; };
 		F5C61FC31FCF494300604CDA /* MElementDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MElementDataModel.m; sourceTree = "<group>"; };
+		F5C61FCA1FCF6EED00604CDA /* ViewControllerMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerMenu.h; sourceTree = "<group>"; };
+		F5C61FCB1FCF6EED00604CDA /* ViewControllerMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMenu.m; sourceTree = "<group>"; };
 		F5C6DEBE1FCD4A8C00B5DAAE /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F5C6DEBF1FCD4A8C00B5DAAE /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +133,8 @@
 				F5C61FC31FCF494300604CDA /* MElementDataModel.m */,
 				F5C61FBC1FCF494300604CDA /* MenuTableViewController.h */,
 				F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */,
+				F5C61FCA1FCF6EED00604CDA /* ViewControllerMenu.h */,
+				F5C61FCB1FCF6EED00604CDA /* ViewControllerMenu.m */,
 				F52B89261FC98DC0009D470E /* SplitViewController.h */,
 				F52B89271FC98DC0009D470E /* SplitViewController.m */,
 				F52B895B1FC99944009D470E /* BillsViewController.h */,
@@ -304,6 +309,7 @@
 				F52B89331FC98DC0009D470E /* main.m in Sources */,
 				F5C61FC11FCF494300604CDA /* Menu_Element.m in Sources */,
 				F5C61FC41FCF494300604CDA /* MElementDataModel.m in Sources */,
+				F5C61FCC1FCF6EED00604CDA /* ViewControllerMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

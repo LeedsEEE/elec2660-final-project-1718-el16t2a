@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MElementDataModel.h" //we import this file and also we create a property because in .m we will use its method
+#import "ViewControllerMenu.h" // we import this file to create a local data of the destination Viewcontroller
 
 @interface MenuTableViewController : UITableViewController
 
