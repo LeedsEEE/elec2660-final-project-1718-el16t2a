@@ -22,12 +22,12 @@
         App1.type = @"Appetizer";
         App1.name = @"OLIVES";
         App1.ingredients = @"marinated olives";
-        App1.price =@"£ 3";
+        App1.price =@"£ 3.00";
         
         self.Appetizers = [NSMutableArray array] ; //creates an empty array for us to fill
         Menu_Element *App2 = [[Menu_Element alloc] init];
         App2.type = @"Appetizer";
-        App2.name = @"TORTILLS CHIPS";
+        App2.name = @"TORTILLA CHIPS";
         App2.ingredients = @"cispy tortilla chips served with salsa & guacamole";
         App2.price =@"£ 3.75";
         
@@ -36,7 +36,7 @@
         App3.type = @"Appetizer";
         App3.name = @"NACHOS";
         App3.ingredients = @"crispy nachos topped with cheddar cheese and jalapenos, served with guacamole, sour cream and salsa";
-        App3.price =@"£ 6";
+        App3.price =@"£ 6.00";
         
         // Now we need to add the different appertizers to the array
         
@@ -64,7 +64,7 @@
         self.Salads = [NSMutableArray array]; //creates an empty array for us to fill
         Menu_Element * salad2 = [[Menu_Element alloc] init];
         salad2.type = @"Salad";
-        salad2.name = @"KALE CAESER";
+        salad2.name = @"KALE CAESAR";
         salad2.ingredients = @"Kale leaves, Grana Padano, anchovies, croutons, Caesar dressing";
         salad2.price = @"£ 7.00";
         
@@ -78,7 +78,7 @@
         self.Salads = [NSMutableArray array]; //creates an empty array for us to fill
         Menu_Element * salad4= [[Menu_Element alloc] init];
         salad4.type = @"Salad";
-        salad4.name = @"AVOCADO & BEEETROOT";
+        salad4.name = @"AVOCADO & BEETROOT";
         salad4.ingredients = @"Quinoa, soy beans, toasted sunflower seeds, baby kale, Ranch chive dressing";
         salad4.price = @"£ 4.75";
         
@@ -101,7 +101,7 @@
         self.Burgers = [NSMutableArray array] ; //creates an empty array for us to fill
         Menu_Element * burger2 = [[Menu_Element alloc] init];
         burger2.type = @"Burger";
-        burger2.name = @"The Cheese";
+        burger2.name = @"THE CHEESE";
         burger2.ingredients = @"Byron cheese, shredded iceberg, pickles, onion, American mustard and Byron sauce";
         burger2.price = @"£ 8.50";
         
@@ -232,7 +232,7 @@
         self.Desserts = [NSMutableArray array]; //creates an empty array for us to fill
         Menu_Element * dessert1 = [[Menu_Element alloc] init];
         dessert1.type = @"Desserts";
-        dessert1.name = @"OREO CHEESEKACE";
+        dessert1.name = @"OREO CHEESECAKE";
         dessert1.ingredients = @"Oreo cookie base, vanilla and Oreo cheesecake, topped with … more Oreos";
         dessert1.price = @"£ 4.95";
         
