@@ -7,6 +7,7 @@
 //
 
 #import "MenuTableViewController.h"
+#import "MenuTableHeaderView.h"
 
 @interface MenuTableViewController ()
 
@@ -19,6 +20,7 @@
     
     self.data = [[MElementDataModel alloc] init];
     
+    self.tableView.tableHeaderView = [[MenuTableHeaderView alloc] initWithText:@"Welcome To Byron"]; // writes this on the header view image 
     //UIImage *menuimage = [UIImage imageNamed: @"MenuPicture.png"];
     
     // Uncomment the following line to preserve selection between presentations.
