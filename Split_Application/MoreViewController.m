@@ -6,17 +6,24 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "ContactUsViewController.h"
+#import "MoreViewController.h"
+#import "LoginViewController.h"
 
-@interface ContactUsViewController ()
+@interface MoreViewController ()
 
 @end
 
-@implementation ContactUsViewController
+@implementation MoreViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //self.WaiterNameLabel.text = username from login page
+    
+    self.WaiterNameLabel.text = @"ALQAWASMI Tariq";
+    self.WorkingHoursLabel.text = @"Weekdays: 14:00-18:00 Weekend: 10:00-18:00";
+    // figure out how to put them on 2 lines
 }
 
 - (void)didReceiveMemoryWarning {

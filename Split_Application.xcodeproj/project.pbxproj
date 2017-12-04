@@ -14,6 +14,7 @@
 		F50A59B31FD5DCFC00524EA1 /* DrinksDrawing.png in Resources */ = {isa = PBXBuildFile; fileRef = F50A59B21FD5DCFC00524EA1 /* DrinksDrawing.png */; };
 		F50A59B51FD5E77100524EA1 /* MenuPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = F50A59B41FD5E77100524EA1 /* MenuPicture.png */; };
 		F50A59B81FD5E78E00524EA1 /* MenuTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F50A59B71FD5E78E00524EA1 /* MenuTableHeaderView.m */; };
+		F50A59BA1FD5F9D900524EA1 /* icon waiter.png in Resources */ = {isa = PBXBuildFile; fileRef = F50A59B91FD5F9D900524EA1 /* icon waiter.png */; };
 		F52B89221FC98DC0009D470E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89211FC98DC0009D470E /* AppDelegate.m */; };
 		F52B89281FC98DC0009D470E /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89271FC98DC0009D470E /* SplitViewController.m */; };
 		F52B892B1FC98DC0009D470E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52B89291FC98DC0009D470E /* Main.storyboard */; };
@@ -23,7 +24,7 @@
 		F52B893D1FC98DC0009D470E /* Split_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B893C1FC98DC0009D470E /* Split_ApplicationTests.m */; };
 		F52B89481FC98DC0009D470E /* Split_ApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89471FC98DC0009D470E /* Split_ApplicationUITests.m */; };
 		F52B895D1FC99944009D470E /* BillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895C1FC99944009D470E /* BillsViewController.m */; };
-		F52B89601FC99985009D470E /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895F1FC99985009D470E /* ContactUsViewController.m */; };
+		F52B89601FC99985009D470E /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895F1FC99985009D470E /* MoreViewController.m */; };
 		F57CA9721FD57D3100FA45F7 /* BurgersDrawing.png in Resources */ = {isa = PBXBuildFile; fileRef = F57CA9711FD57D3100FA45F7 /* BurgersDrawing.png */; };
 		F5C61FBE1FCF494300604CDA /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */; };
 		F5C61FC11FCF494300604CDA /* Menu_Element.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FC01FCF494300604CDA /* Menu_Element.m */; };
@@ -59,6 +60,7 @@
 		F50A59B41FD5E77100524EA1 /* MenuPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MenuPicture.png; path = ../../MenuPicture.png; sourceTree = "<group>"; };
 		F50A59B61FD5E78E00524EA1 /* MenuTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableHeaderView.h; sourceTree = "<group>"; };
 		F50A59B71FD5E78E00524EA1 /* MenuTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableHeaderView.m; sourceTree = "<group>"; };
+		F50A59B91FD5F9D900524EA1 /* icon waiter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon waiter.png"; sourceTree = "<group>"; };
 		F52B891D1FC98DC0009D470E /* Split_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Split_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52B89201FC98DC0009D470E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F52B89211FC98DC0009D470E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,8 +79,8 @@
 		F52B89491FC98DC0009D470E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F52B895B1FC99944009D470E /* BillsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillsViewController.h; sourceTree = "<group>"; };
 		F52B895C1FC99944009D470E /* BillsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillsViewController.m; sourceTree = "<group>"; };
-		F52B895E1FC99985009D470E /* ContactUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
-		F52B895F1FC99985009D470E /* ContactUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
+		F52B895E1FC99985009D470E /* MoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		F52B895F1FC99985009D470E /* MoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		F57CA9711FD57D3100FA45F7 /* BurgersDrawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BurgersDrawing.png; sourceTree = "<group>"; };
 		F5C61FBC1FCF494300604CDA /* MenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
@@ -168,8 +170,9 @@
 				F5DD969A1FD493B2006EAED0 /* Split logo.png */,
 				F52B895B1FC99944009D470E /* BillsViewController.h */,
 				F52B895C1FC99944009D470E /* BillsViewController.m */,
-				F52B895E1FC99985009D470E /* ContactUsViewController.h */,
-				F52B895F1FC99985009D470E /* ContactUsViewController.m */,
+				F52B895E1FC99985009D470E /* MoreViewController.h */,
+				F52B895F1FC99985009D470E /* MoreViewController.m */,
+				F50A59B91FD5F9D900524EA1 /* icon waiter.png */,
 				F52B892C1FC98DC0009D470E /* Assets.xcassets */,
 				F52B892E1FC98DC0009D470E /* LaunchScreen.storyboard */,
 				F52B89311FC98DC0009D470E /* Info.plist */,
@@ -305,6 +308,7 @@
 				F50A59B51FD5E77100524EA1 /* MenuPicture.png in Resources */,
 				F57CA9721FD57D3100FA45F7 /* BurgersDrawing.png in Resources */,
 				F50A59B31FD5DCFC00524EA1 /* DrinksDrawing.png in Resources */,
+				F50A59BA1FD5F9D900524EA1 /* icon waiter.png in Resources */,
 				F52B89301FC98DC0009D470E /* LaunchScreen.storyboard in Resources */,
 				F52B892D1FC98DC0009D470E /* Assets.xcassets in Resources */,
 				F50A59AD1FD5DCE400524EA1 /* SaladsDrawing.png in Resources */,
@@ -341,7 +345,7 @@
 				F52B89281FC98DC0009D470E /* SplitViewController.m in Sources */,
 				F52B89221FC98DC0009D470E /* AppDelegate.m in Sources */,
 				F5C6DEC11FCD4A9700B5DAAE /* LoginViewController.m in Sources */,
-				F52B89601FC99985009D470E /* ContactUsViewController.m in Sources */,
+				F52B89601FC99985009D470E /* MoreViewController.m in Sources */,
 				F5C61FBE1FCF494300604CDA /* MenuTableViewController.m in Sources */,
 				F52B89331FC98DC0009D470E /* main.m in Sources */,
 				F5C61FC11FCF494300604CDA /* Menu_Element.m in Sources */,

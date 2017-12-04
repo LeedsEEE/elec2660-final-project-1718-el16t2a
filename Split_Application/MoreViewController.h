@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContactUsViewController : UIViewController
+@interface MoreViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *WaiterNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *WorkingHoursLabel;
 
 @end
