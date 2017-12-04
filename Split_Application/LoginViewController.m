@@ -26,35 +26,34 @@
 
 #pragma mark : to set username
 
-    self.username = @"1";
-    self.password = @"2";
+    self.username = @"1";                          // username
+    self.password = @"2";                          // password
     
-    self.PasswordTextField.secureTextEntry = YES ;
+    self.PasswordTextField.secureTextEntry = YES ; // When the user types in the password, letters turn into dots
 }
 
-- (IBAction)LoginPressed:(id)sender {
+- (IBAction)LoginPressed:(id)sender {              // When the user clicks the login button
     
     BOOL isUsersEqual = [self.username isEqualToString:[self.UsernameTextField text]];
     BOOL isPasswordsEqual = [self.password isEqualToString:[self.PasswordTextField text]];
-    NSLog(@"%d  %d",isUsersEqual,isPasswordsEqual);
+   // NSLog(@"%d  %d",isUsersEqual,isPasswordsEqual);
     
-    if (isUsersEqual && isPasswordsEqual) {
-        NSLog(@"logging in ...");
-        [self.NotificationLabel setText:@"Logging in ..."];
-        //[self performSegueWithIdentifier:@"login" sender:self];
+    if (isUsersEqual && isPasswordsEqual) {       // When user enters the right details
         
-        //when log in is pressed it takes us to the application
-        NSString * storyboardName = @"Main"; // Main.storyboard
+        [self.NotificationLabel setText:@"Logging in ..."];
+        
+        //when log in is pressed and the right details are entered, we want our app to open on a certain page
+        NSString * storyboardName = @"Main";      // Main.storyboard
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
         UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"main_program"]; //identifier given to the next wanted screen
         [self presentViewController:vc animated:YES completion:nil];
         
     }
-    else { // when username and password don't match the entered information :
+    
+    else {                                       // When username and password don't match the entered information :
         [self.NotificationLabel setText:@"Username or password incorrect!"];
     }
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -22,6 +22,7 @@
 		F5C61FC41FCF494300604CDA /* MElementDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FC31FCF494300604CDA /* MElementDataModel.m */; };
 		F5C61FCC1FCF6EED00604CDA /* ViewControllerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FCB1FCF6EED00604CDA /* ViewControllerMenu.m */; };
 		F5C6DEC11FCD4A9700B5DAAE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C6DEBF1FCD4A8C00B5DAAE /* LoginViewController.m */; };
+		F5DD969B1FD493B2006EAED0 /* Split logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DD969A1FD493B2006EAED0 /* Split logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		F5C61FCB1FCF6EED00604CDA /* ViewControllerMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMenu.m; sourceTree = "<group>"; };
 		F5C6DEBE1FCD4A8C00B5DAAE /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F5C6DEBF1FCD4A8C00B5DAAE /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F5DD969A1FD493B2006EAED0 /* Split logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Split logo.png"; path = "../../Split logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				F5C61FCB1FCF6EED00604CDA /* ViewControllerMenu.m */,
 				F52B89261FC98DC0009D470E /* SplitViewController.h */,
 				F52B89271FC98DC0009D470E /* SplitViewController.m */,
+				F5DD969A1FD493B2006EAED0 /* Split logo.png */,
 				F52B895B1FC99944009D470E /* BillsViewController.h */,
 				F52B895C1FC99944009D470E /* BillsViewController.m */,
 				F52B895E1FC99985009D470E /* ContactUsViewController.h */,
@@ -275,6 +278,7 @@
 			files = (
 				F52B89301FC98DC0009D470E /* LaunchScreen.storyboard in Resources */,
 				F52B892D1FC98DC0009D470E /* Assets.xcassets in Resources */,
+				F5DD969B1FD493B2006EAED0 /* Split logo.png in Resources */,
 				F52B892B1FC98DC0009D470E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
