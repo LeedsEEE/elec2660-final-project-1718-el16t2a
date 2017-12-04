@@ -24,6 +24,17 @@
         // Now we need to add the different appertizers to the array
         
         [self.Appetizers addObject:GB]; //index 1
+        
+        ////////////////////////////////////////////////////////////////////////////////////
+        
+        self.Burgers = [NSMutableArray array] ;
+        Menu_Element * TheCheese = [[Menu_Element alloc] init];
+        TheCheese.type = @"Burger";
+        TheCheese.name = @"The Cheese";
+        TheCheese.ingredients = @"Byron cheese, shredded iceberg, pickles, onion, American mustard and Byron sauce";
+        TheCheese.price = 5.3;
+        
+        [self.Burgers addObject:TheCheese]; //index 1
     }
     return self;
 }

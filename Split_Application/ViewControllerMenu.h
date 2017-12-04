@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *typeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ingredientsLabel;
 
-@property (strong,nonatomic) Menu_Element *element;
+@property (weak, nonatomic) IBOutlet UIImageView *MenuDrawing;
+
+@property (strong,nonatomic) Menu_Element *element; // stores our data
 
 @end

@@ -22,6 +22,11 @@
     self.priceLabel.text = [NSString stringWithFormat:@"£ %ld",self.element.price]; // because property of price is NSinteger
     self.typeLabel.text = self.element.type;
     self.ingredientsLabel.text = self.element.ingredients;
+    
+    if ([self.nameLabel.text isEqualToString:@"Garlic Bread"]) {
+        
+        self.MenuDrawing.image = [UIImage imageNamed:@"BurgersDrawing.png"];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -17,6 +17,7 @@
 		F52B89481FC98DC0009D470E /* Split_ApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89471FC98DC0009D470E /* Split_ApplicationUITests.m */; };
 		F52B895D1FC99944009D470E /* BillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895C1FC99944009D470E /* BillsViewController.m */; };
 		F52B89601FC99985009D470E /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895F1FC99985009D470E /* ContactUsViewController.m */; };
+		F57CA9721FD57D3100FA45F7 /* BurgersDrawing.png in Resources */ = {isa = PBXBuildFile; fileRef = F57CA9711FD57D3100FA45F7 /* BurgersDrawing.png */; };
 		F5C61FBE1FCF494300604CDA /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */; };
 		F5C61FC11FCF494300604CDA /* Menu_Element.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FC01FCF494300604CDA /* Menu_Element.m */; };
 		F5C61FC41FCF494300604CDA /* MElementDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FC31FCF494300604CDA /* MElementDataModel.m */; };
@@ -63,6 +64,7 @@
 		F52B895C1FC99944009D470E /* BillsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillsViewController.m; sourceTree = "<group>"; };
 		F52B895E1FC99985009D470E /* ContactUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
 		F52B895F1FC99985009D470E /* ContactUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
+		F57CA9711FD57D3100FA45F7 /* BurgersDrawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BurgersDrawing.png; sourceTree = "<group>"; };
 		F5C61FBC1FCF494300604CDA /* MenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		F5C61FBF1FCF494300604CDA /* Menu_Element.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu_Element.h; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */,
 				F5C61FCA1FCF6EED00604CDA /* ViewControllerMenu.h */,
 				F5C61FCB1FCF6EED00604CDA /* ViewControllerMenu.m */,
+				F57CA9711FD57D3100FA45F7 /* BurgersDrawing.png */,
 				F52B89261FC98DC0009D470E /* SplitViewController.h */,
 				F52B89271FC98DC0009D470E /* SplitViewController.m */,
 				F5DD969A1FD493B2006EAED0 /* Split logo.png */,
@@ -276,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57CA9721FD57D3100FA45F7 /* BurgersDrawing.png in Resources */,
 				F52B89301FC98DC0009D470E /* LaunchScreen.storyboard in Resources */,
 				F52B892D1FC98DC0009D470E /* Assets.xcassets in Resources */,
 				F5DD969B1FD493B2006EAED0 /* Split logo.png in Resources */,

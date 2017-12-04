@@ -15,7 +15,7 @@
 @property(strong,nonatomic) NSString *type;
 @property(strong,nonatomic) NSString *name;
 @property(strong,nonatomic) NSString *ingredients;
-@property NSInteger *price;
+@property NSInteger price;
 
 @end
 
