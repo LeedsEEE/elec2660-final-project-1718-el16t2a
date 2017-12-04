@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     
     self.nameLabel.text = self.element.name;
-    self.priceLabel.text = [NSString stringWithFormat:@"£ %ld",self.element.price]; // because property of price is NSinteger
+    self.priceLabel.text = self.element.price; //[NSString stringWithFormat:@"£ %ld",self.element.price]; // because property of price is NSinteger
     self.typeLabel.text = self.element.type;
     self.ingredientsLabel.text = self.element.ingredients;
     

@@ -12,10 +12,10 @@
 
 @interface Menu_Element : NSObject
 
-@property(strong,nonatomic) NSString *type;
-@property(strong,nonatomic) NSString *name;
-@property(strong,nonatomic) NSString *ingredients;
-@property NSInteger price;
+@property (strong,nonatomic) NSString *type;
+@property (strong,nonatomic) NSString *name;
+@property (strong,nonatomic) NSString *ingredients;
+@property (strong,nonatomic) NSString *price;
 
 @end
 
