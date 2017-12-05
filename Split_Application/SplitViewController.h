@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SplitViewController : UIViewController
+@interface SplitViewController : UIViewController <UITextFieldDelegate>
 
 //initialising the "variables" we will use
 
@@ -30,6 +30,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *EachLabel;
 @property (weak, nonatomic) IBOutlet UISlider *SplittersSliderOutlet;
 
+- (IBAction)didPressBackground:(id)sender;
 
 - (IBAction)StudentDiscount:(UISwitch *)sender;
 - (IBAction)SplittersSlider:(UISlider *)sender;

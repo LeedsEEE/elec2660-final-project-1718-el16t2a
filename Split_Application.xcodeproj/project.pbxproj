@@ -27,6 +27,8 @@
 		F52B89481FC98DC0009D470E /* Split_ApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89471FC98DC0009D470E /* Split_ApplicationUITests.m */; };
 		F52B895D1FC99944009D470E /* BillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895C1FC99944009D470E /* BillsViewController.m */; };
 		F52B89601FC99985009D470E /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895F1FC99985009D470E /* MoreViewController.m */; };
+		F57CA0DF1FD6CFA600DA20EE /* multiple users.png in Resources */ = {isa = PBXBuildFile; fileRef = F57CA0DE1FD6CFA500DA20EE /* multiple users.png */; };
+		F57CA0E11FD6CFDA00DA20EE /* 1 user.png in Resources */ = {isa = PBXBuildFile; fileRef = F57CA0E01FD6CFDA00DA20EE /* 1 user.png */; };
 		F57CA9721FD57D3100FA45F7 /* BurgersDrawing.png in Resources */ = {isa = PBXBuildFile; fileRef = F57CA9711FD57D3100FA45F7 /* BurgersDrawing.png */; };
 		F5C61FBE1FCF494300604CDA /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */; };
 		F5C61FC11FCF494300604CDA /* Menu_Element.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FC01FCF494300604CDA /* Menu_Element.m */; };
@@ -87,6 +89,8 @@
 		F52B895C1FC99944009D470E /* BillsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillsViewController.m; sourceTree = "<group>"; };
 		F52B895E1FC99985009D470E /* MoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		F52B895F1FC99985009D470E /* MoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		F57CA0DE1FD6CFA500DA20EE /* multiple users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "multiple users.png"; sourceTree = "<group>"; };
+		F57CA0E01FD6CFDA00DA20EE /* 1 user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1 user.png"; sourceTree = "<group>"; };
 		F57CA9711FD57D3100FA45F7 /* BurgersDrawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BurgersDrawing.png; sourceTree = "<group>"; };
 		F5C61FBC1FCF494300604CDA /* MenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
@@ -171,9 +175,11 @@
 				F50A59AE1FD5DCEC00524EA1 /* F&SDrawing.png */,
 				F50A59B01FD5DCF200524EA1 /* DessertsDrawing.png */,
 				F50A59B21FD5DCFC00524EA1 /* DrinksDrawing.png */,
+				F5DD969A1FD493B2006EAED0 /* Split logo.png */,
 				F52B89261FC98DC0009D470E /* SplitViewController.h */,
 				F52B89271FC98DC0009D470E /* SplitViewController.m */,
-				F5DD969A1FD493B2006EAED0 /* Split logo.png */,
+				F57CA0E01FD6CFDA00DA20EE /* 1 user.png */,
+				F57CA0DE1FD6CFA500DA20EE /* multiple users.png */,
 				F52B895B1FC99944009D470E /* BillsViewController.h */,
 				F52B895C1FC99944009D470E /* BillsViewController.m */,
 				F52B895E1FC99985009D470E /* MoreViewController.h */,
@@ -320,11 +326,13 @@
 				F50A59B31FD5DCFC00524EA1 /* DrinksDrawing.png in Resources */,
 				F50A59BA1FD5F9D900524EA1 /* icon waiter.png in Resources */,
 				F52B89301FC98DC0009D470E /* LaunchScreen.storyboard in Resources */,
+				F57CA0E11FD6CFDA00DA20EE /* 1 user.png in Resources */,
 				F52B892D1FC98DC0009D470E /* Assets.xcassets in Resources */,
 				F50A59AD1FD5DCE400524EA1 /* SaladsDrawing.png in Resources */,
 				F50A59B11FD5DCF200524EA1 /* DessertsDrawing.png in Resources */,
 				F50A59AF1FD5DCEC00524EA1 /* F&SDrawing.png in Resources */,
 				F50A59AB1FD5DCDF00524EA1 /* AppetizersDrawing.png in Resources */,
+				F57CA0DF1FD6CFA600DA20EE /* multiple users.png in Resources */,
 				F5DD969B1FD493B2006EAED0 /* Split logo.png in Resources */,
 				F52B892B1FC98DC0009D470E /* Main.storyboard in Resources */,
 			);
