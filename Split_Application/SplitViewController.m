@@ -19,14 +19,15 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.SplittersSliderOutlet.value = 1 ;
-    self.TipTextField.text = @"0.00" ;
-    [self SplittersSlider:self.SplittersSliderOutlet]; // send message to get 1
+    //self.TipTextField.text = @"0.00" ;
+    [self SplittersSlider:self.SplittersSliderOutlet]; // send message to get splitter label to display 1
+   
+    //initiating text field to be able to use what is typped in
     
     self.TipTextField.delegate = self;
     self.AmountTextField.delegate = self;
     self.TableNumberTextField.delegate = self;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -40,13 +41,16 @@
     }
     if (textField == self.AmountTextField) {
         [self.AmountTextField endEditing:YES];
-        self.Bill = [self.AmountTextField.text doubleValue];
+        self.Bill = [self.AmountTextField.text doubleValue]; // associate typed value to the selected variable
     }
     if (textField == self.TipTextField) {
         
-        self.Tip = [self.TipTextField.text doubleValue];
+        self.Tip = [self.TipTextField.text doubleValue]; // associate typed value to the selected variable
         _Total = (self.Bill + self.Tip);
         self.TotalLabel.text = [NSString stringWithFormat:@"Total: £%.2f",_Total];
+        
+        _Each = _Total/_Splitters ;
+        self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",_Each];
     }
 }
 
@@ -77,6 +81,6 @@
     //self.TotalLabel.text= [NSString stringWithFormat:@"Total: %.2f £",_Total];
     
     _Each = _Total/_Splitters ;
-     self.EachLabel.text= [NSString stringWithFormat:@"Total: %.2f £",_Each];
+    self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",_Each];
 }
 @end

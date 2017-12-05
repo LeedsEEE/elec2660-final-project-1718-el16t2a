@@ -7,7 +7,7 @@
 //
 
 #import "MoreViewController.h"
-#import "LoginViewController.h"
+//#import "LoginViewController.h"
 
 @interface MoreViewController ()
 
@@ -22,8 +22,7 @@
     //self.WaiterNameLabel.text = username from login page
     
     self.WaiterNameLabel.text = @"ALQAWASMI Tariq";
-    self.WorkingHoursLabel.text = @"Weekdays: 14:00-18:00 Weekend: 10:00-18:00";
-    // figure out how to put them on 2 lines
+    self.WorkingHoursLabel.text = @"Weekdays: 14:00-18:00 \nWeekend: 10:00-18:00";
     
    /* if () {
         
@@ -51,11 +50,12 @@
 */
 
 - (IBAction)LogoutPressed:(id)sender {
-    
+  /*
     NSString * storyboardName = @"Main";      // Main.storyboard
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    UIViewController * vc1 = [storyboard instantiateViewControllerWithIdentifier:@"Login"]; //identifier given to the next wanted screen
-    [self presentViewController:vc1 animated:YES completion:nil];
-    
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"Login"]; //identifier given to the next wanted screen
+   [self presentViewController:vc animated:YES completion:nil];}
+ */
 }
+    
 @end
