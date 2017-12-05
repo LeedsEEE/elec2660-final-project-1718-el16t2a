@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *WaiterNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *WorkingHoursLabel;
 
+- (IBAction)LogoutPressed:(id)sender;
+
 @end

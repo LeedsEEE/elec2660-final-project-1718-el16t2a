@@ -24,6 +24,15 @@
     self.WaiterNameLabel.text = @"ALQAWASMI Tariq";
     self.WorkingHoursLabel.text = @"Weekdays: 14:00-18:00 Weekend: 10:00-18:00";
     // figure out how to put them on 2 lines
+    
+   /* if () {
+        
+        NSString * storyboardName = @"Main";      // Main.storyboard
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+        UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"Login"]; //identifier given to the next wanted screen
+        [self presentViewController:vc animated:YES completion:nil];
+    
+    } */
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,4 +50,12 @@
 }
 */
 
+- (IBAction)LogoutPressed:(id)sender {
+    
+    NSString * storyboardName = @"Main";      // Main.storyboard
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc1 = [storyboard instantiateViewControllerWithIdentifier:@"Login"]; //identifier given to the next wanted screen
+    [self presentViewController:vc1 animated:YES completion:nil];
+    
+}
 @end
