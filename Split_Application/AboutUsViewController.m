@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     
     self.DescriptionLabel.text = @"Byron is an American-inspired chain diner serving posh hamburgers with a choice of toppings, sides & salads.";
-    self.HoursLabel.text = @"Saturday: 11am–11pm Sunday:11am–10pm Monday:    11:30am–10pm Tuesday: 11:30am–10pm Wednesday: 11:30am–10pm Thursday: 11:30am–10pm Friday: 11am–11pm";
+    self.HoursLabel.text = @"Opening Hours:\n Saturday:       11am–11pm\n Sunday:         11am–10pm\n Monday:        11:30am–10pm\n Tuesday:       11:30am–10pm\n Wednesday: 11:30am–10pm\n Thursday:     11:30am–10pm\n Friday:           11am–11pm";
     self.TelephoneLabel.text = @"Telephone number: 0113 243 4444";
     
 }
