@@ -15,6 +15,8 @@
 		F50A59B51FD5E77100524EA1 /* MenuPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = F50A59B41FD5E77100524EA1 /* MenuPicture.png */; };
 		F50A59B81FD5E78E00524EA1 /* MenuTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F50A59B71FD5E78E00524EA1 /* MenuTableHeaderView.m */; };
 		F50A59BA1FD5F9D900524EA1 /* icon waiter.png in Resources */ = {isa = PBXBuildFile; fileRef = F50A59B91FD5F9D900524EA1 /* icon waiter.png */; };
+		F50A59BD1FD61ACD00524EA1 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50A59BC1FD61ACD00524EA1 /* AboutUsViewController.m */; };
+		F50A59C01FD6269400524EA1 /* WebsiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50A59BF1FD6269400524EA1 /* WebsiteViewController.m */; };
 		F52B89221FC98DC0009D470E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89211FC98DC0009D470E /* AppDelegate.m */; };
 		F52B89281FC98DC0009D470E /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89271FC98DC0009D470E /* SplitViewController.m */; };
 		F52B892B1FC98DC0009D470E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52B89291FC98DC0009D470E /* Main.storyboard */; };
@@ -61,6 +63,10 @@
 		F50A59B61FD5E78E00524EA1 /* MenuTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableHeaderView.h; sourceTree = "<group>"; };
 		F50A59B71FD5E78E00524EA1 /* MenuTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableHeaderView.m; sourceTree = "<group>"; };
 		F50A59B91FD5F9D900524EA1 /* icon waiter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon waiter.png"; sourceTree = "<group>"; };
+		F50A59BB1FD61ACD00524EA1 /* AboutUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		F50A59BC1FD61ACD00524EA1 /* AboutUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		F50A59BE1FD6269400524EA1 /* WebsiteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebsiteViewController.h; sourceTree = "<group>"; };
+		F50A59BF1FD6269400524EA1 /* WebsiteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebsiteViewController.m; sourceTree = "<group>"; };
 		F52B891D1FC98DC0009D470E /* Split_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Split_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52B89201FC98DC0009D470E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F52B89211FC98DC0009D470E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -173,6 +179,10 @@
 				F52B895E1FC99985009D470E /* MoreViewController.h */,
 				F52B895F1FC99985009D470E /* MoreViewController.m */,
 				F50A59B91FD5F9D900524EA1 /* icon waiter.png */,
+				F50A59BB1FD61ACD00524EA1 /* AboutUsViewController.h */,
+				F50A59BC1FD61ACD00524EA1 /* AboutUsViewController.m */,
+				F50A59BE1FD6269400524EA1 /* WebsiteViewController.h */,
+				F50A59BF1FD6269400524EA1 /* WebsiteViewController.m */,
 				F52B892C1FC98DC0009D470E /* Assets.xcassets */,
 				F52B892E1FC98DC0009D470E /* LaunchScreen.storyboard */,
 				F52B89311FC98DC0009D470E /* Info.plist */,
@@ -349,6 +359,8 @@
 				F5C61FBE1FCF494300604CDA /* MenuTableViewController.m in Sources */,
 				F52B89331FC98DC0009D470E /* main.m in Sources */,
 				F5C61FC11FCF494300604CDA /* Menu_Element.m in Sources */,
+				F50A59BD1FD61ACD00524EA1 /* AboutUsViewController.m in Sources */,
+				F50A59C01FD6269400524EA1 /* WebsiteViewController.m in Sources */,
 				F50A59B81FD5E78E00524EA1 /* MenuTableHeaderView.m in Sources */,
 				F5C61FC41FCF494300604CDA /* MElementDataModel.m in Sources */,
 				F5C61FCC1FCF6EED00604CDA /* ViewControllerMenu.m in Sources */,
