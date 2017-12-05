@@ -11,12 +11,12 @@
 
 @interface MElementDataModel : NSObject
 
-@property (strong,nonatomic) NSMutableArray *Appetizers; //this array is of indefinite length and      ///////////////////////////////////////////////////////will hold all the appetizers
-@property (strong,nonatomic) NSMutableArray *Salads;
-@property (strong,nonatomic) NSMutableArray *Burgers;
-@property (strong,nonatomic) NSMutableArray *FriesSides;
-@property (strong,nonatomic) NSMutableArray *Desserts;
-@property (strong,nonatomic) NSMutableArray *Drinks;
+@property (strong,nonatomic) NSMutableArray *Appetizers; //this array is of indefinite length and   will hold all the appetizers
+@property (strong,nonatomic) NSMutableArray *Salads; //this array is of indefinite length and   will hold all the Salads
+@property (strong,nonatomic) NSMutableArray *Burgers; //this array is of indefinite length and   will hold all the burgers
+@property (strong,nonatomic) NSMutableArray *FriesSides; //this array is of indefinite length and   will hold all the fries and sides
+@property (strong,nonatomic) NSMutableArray *Desserts; //this array is of indefinite length and   will hold all the desserts
+@property (strong,nonatomic) NSMutableArray *Drinks; //this array is of indefinite length and   will hold all the drinks
 
 
 @end

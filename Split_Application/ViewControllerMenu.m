@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     
     self.nameLabel.text = self.element.name;
-    self.priceLabel.text = self.element.price; //[NSString stringWithFormat:@"£ %ld",self.element.price]; // because property of price is NSinteger
+    self.priceLabel.text = self.element.price;
     self.typeLabel.text = self.element.type;
     self.ingredientsLabel.text = self.element.ingredients;
     
@@ -28,6 +28,7 @@
         
         self.MenuDrawing.image = [UIImage imageNamed:@"AppetizersDrawing.png"];
     }
+    
     // adding a picture for the salads
     if ([self.nameLabel.text isEqualToString:@"CLASSIC CAESAR"] || [self.nameLabel.text isEqualToString:@"KALE CAESAR"] || [self.nameLabel.text isEqualToString:@"CLASSIC COBB"] || [self.nameLabel.text isEqualToString:@"AVOCADO & BEETROOT"]) {
         

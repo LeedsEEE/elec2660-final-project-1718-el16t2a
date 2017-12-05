@@ -15,11 +15,12 @@
 @implementation SplitViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
     self.SplittersSliderOutlet.value = 1 ;
-    //self.TipTextField.text = @"0.00" ;
+    
     [self SplittersSlider:self.SplittersSliderOutlet]; // send message to get splitter label to display 1
    
     //initiating text field to be able to use what is typped in
@@ -27,6 +28,7 @@
     self.TipTextField.delegate = self;
     self.AmountTextField.delegate = self;
     self.TableNumberTextField.delegate = self;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,23 +36,33 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+//ckecks which textfield is being used, allows to calculate total automatically
 - (void) textFieldDidEndEditing:(UITextField *)textField {
     
     if (self.TableNumberTextField) {
+       
         [self.TableNumberTextField endEditing:YES];
+   
     }
+    
     if (textField == self.AmountTextField) {
+     
         [self.AmountTextField endEditing:YES];
         self.Bill = [self.AmountTextField.text doubleValue]; // associate typed value to the selected variable
+    
     }
+    
     if (textField == self.TipTextField) {
         
         self.Tip = [self.TipTextField.text doubleValue]; // associate typed value to the selected variable
-        _Total = (self.Bill + self.Tip);
-        self.TotalLabel.text = [NSString stringWithFormat:@"Total: £%.2f",_Total];
+        self.Total = (self.Bill + self.Tip);
         
-        _Each = _Total/_Splitters ;
-        self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",_Each];
+        self.TotalLabel.text = [NSString stringWithFormat:@"Total: £%.2f",self.Total];
+        
+        self.Each = self.Total/self.Splitters;
+        self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",self.Each];
+   
     }
 }
 
@@ -59,7 +71,7 @@
     [self.view endEditing:YES];
 }
 
--(BOOL) textFieldShouldReturn:(UITextField *)textField {
+-(BOOL) textFieldShouldReturn:(UITextField *)textField { //return button on keyboard
     
     [textField resignFirstResponder];
     return YES;
@@ -72,15 +84,11 @@
     
     self.SplittersLabel.text = [NSString stringWithFormat:@"Splitters: %.0f",sender.value];
     
-    _Splitters = sender.value;
     
-    //_Bill= self.AmountTextField text;
-    //_Tip= self.TipTextField text;
+    self.Splitters=sender.value;
     
-    //_Total = _Bill + _Tip ;
-    //self.TotalLabel.text= [NSString stringWithFormat:@"Total: %.2f £",_Total];
-    
-    _Each = _Total/_Splitters ;
-    self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",_Each];
+    self.Each = self.Total / self.Splitters;
+    self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",self.Each];
 }
+
 @end

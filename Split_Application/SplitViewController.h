@@ -25,14 +25,17 @@
 @property (weak, nonatomic) IBOutlet UITextField *TableNumberTextField;
 @property (weak, nonatomic) IBOutlet UITextField *AmountTextField;
 @property (weak, nonatomic) IBOutlet UITextField *TipTextField;
+
 @property (weak, nonatomic) IBOutlet UILabel *TotalLabel;
 @property (weak, nonatomic) IBOutlet UILabel *SplittersLabel;
 @property (weak, nonatomic) IBOutlet UILabel *EachLabel;
+
 @property (weak, nonatomic) IBOutlet UISlider *SplittersSliderOutlet;
 
 - (IBAction)didPressBackground:(id)sender;
 
 - (IBAction)StudentDiscount:(UISwitch *)sender;
+
 - (IBAction)SplittersSlider:(UISlider *)sender;
 
 @end
