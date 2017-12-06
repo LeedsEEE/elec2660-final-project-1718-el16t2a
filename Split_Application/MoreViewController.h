@@ -8,10 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MoreViewController : UIViewController
+@interface MoreViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+
+{
+    NSMutableArray *arrayAddData; // array that will store added notes
+    NSMutableArray *arrayDeleteData; // array where notes will be deleted
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *WaiterNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *WorkingHoursLabel;
+
+@property (weak, nonatomic) IBOutlet UITextField *NotesTextField;
+@property (strong  , nonatomic) IBOutlet UITableView *NotesTableView;
+
+- (IBAction)AddWasPressed:(id)sender;
+- (IBAction)DeleteWasPressed:(id)sender;
+
 
 - (IBAction)LogoutPressed:(id)sender;
 

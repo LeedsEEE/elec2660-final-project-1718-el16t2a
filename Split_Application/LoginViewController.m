@@ -32,12 +32,6 @@
     
     self.PasswordTextField.secureTextEntry = YES ; // When the user types in the password, letters turn into dots
     
-    //making sure textfields are empty for next login
-    
-    //self.UsernameTextField.text = @"";
-    //self.PasswordTextField.text = @"";
-    //self.NotificationLabel.text = @"";
-    
 }
 
 - (IBAction)LoginPressed:(id)sender {              // When the user clicks the login button
@@ -64,6 +58,7 @@
 }
 
 - (void)didReceiveMemoryWarning {
+
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
