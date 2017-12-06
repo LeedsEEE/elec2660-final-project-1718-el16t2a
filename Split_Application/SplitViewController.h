@@ -15,10 +15,17 @@
 @property NSInteger TableNumber;
 //@property Date;
 @property float Bill;
+@property float DiscountedBill;
+
 @property float Tip;
+
 @property float Total;
+@property float DiscountedTotal;
+
 @property NSInteger Splitters;
+
 @property float Each;
+@property float DiscountedEach;
 
 //setting up the connections from the view controller in the storyboard
 
@@ -31,6 +38,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *EachLabel;
 
 @property (weak, nonatomic) IBOutlet UISlider *SplittersSliderOutlet;
+
+-(IBAction)didPressClear:(id)sender;
 
 - (IBAction)didPressBackground:(id)sender;
 

@@ -21,6 +21,7 @@
 @implementation LoginViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
@@ -30,6 +31,13 @@
     self.password = @"2";                          // password
     
     self.PasswordTextField.secureTextEntry = YES ; // When the user types in the password, letters turn into dots
+    
+    //making sure textfields are empty for next login
+    
+    //self.UsernameTextField.text = @"";
+    //self.PasswordTextField.text = @"";
+    //self.NotificationLabel.text = @"";
+    
 }
 
 - (IBAction)LoginPressed:(id)sender {              // When the user clicks the login button
@@ -60,7 +68,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma to hide keyboard after finishing typing
+#pragma mark : to hide keyboard after finishing typing
 
 -(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];

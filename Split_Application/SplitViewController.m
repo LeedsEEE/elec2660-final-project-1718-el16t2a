@@ -78,6 +78,21 @@
 }
 
 - (IBAction)StudentDiscount:(UISwitch *)sender {
+    
+    if(sender.on) {
+        self.DiscountedBill = [self.AmountTextField.text doubleValue] -([self.AmountTextField.text doubleValue] * 0.1);
+        
+        self.DiscountedTotal = self.DiscountedBill + self.Tip;
+        self.TotalLabel.text = [NSString stringWithFormat:@"Total: £%.2f",self.DiscountedTotal];
+        
+        self.DiscountedEach = self.DiscountedTotal / self.Splitters;
+        self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",self.DiscountedEach];
+    }
+    
+    else {
+        
+    }
+    
 }
 
 - (IBAction)SplittersSlider:(UISlider *)sender {
@@ -89,6 +104,16 @@
     
     self.Each = self.Total / self.Splitters;
     self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",self.Each];
+}
+
+-(IBAction)didPressClear:(id)sender {
+    
+    self.TableNumberTextField.text = @"";
+    self.AmountTextField.text = @"";
+    self.TipTextField.text = @"";
+    self.TotalLabel.text = [NSString stringWithFormat:@"Total: £"];
+    self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £0.00"];
+    
 }
 
 @end
