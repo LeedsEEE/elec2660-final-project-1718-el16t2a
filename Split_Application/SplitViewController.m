@@ -28,7 +28,8 @@
     self.TipTextField.delegate = self;
     self.AmountTextField.delegate = self;
     self.TableNumberTextField.delegate = self;
-
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,6 +81,9 @@
 - (IBAction)StudentDiscount:(UISwitch *)sender {
     
     if(sender.on) {
+        
+        self.Splitters=self.SplittersSliderOutlet.value;
+        
         self.DiscountedBill = [self.AmountTextField.text doubleValue] -([self.AmountTextField.text doubleValue] * 0.1);
         
         self.DiscountedTotal = self.DiscountedBill + self.Tip;
@@ -113,7 +117,7 @@
     self.TipTextField.text = @"";
     self.TotalLabel.text = [NSString stringWithFormat:@"Total: £"];
     self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £0.00"];
-    
+    //add switch = off
 }
 
 @end
