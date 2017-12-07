@@ -50,18 +50,23 @@
     if (textField == self.AmountTextField) {
      
         [self.AmountTextField endEditing:YES];
+        
         self.Bill = [self.AmountTextField.text doubleValue]; // associate typed value to the selected variable
     
     }
     
     if (textField == self.TipTextField) {
         
+        [self.TipTextField endEditing:YES];
+        
         self.Tip = [self.TipTextField.text doubleValue]; // associate typed value to the selected variable
+        
         self.Total = (self.Bill + self.Tip);
         
         self.TotalLabel.text = [NSString stringWithFormat:@"Total: £%.2f",self.Total];
         
         self.Each = self.Total/self.Splitters;
+        
         self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",self.Each];
    
     }
@@ -91,6 +96,7 @@
         
         self.DiscountedEach = self.DiscountedTotal / self.Splitters;
         self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",self.DiscountedEach];
+    
     }
     
     else {
@@ -101,10 +107,11 @@
 
 - (IBAction)SplittersSlider:(UISlider *)sender {
     
+    self.Splitters=sender.value;
+    
     self.SplittersLabel.text = [NSString stringWithFormat:@"Splitters: %.0f",sender.value];
     
     
-    self.Splitters=sender.value;
     
     self.Each = self.Total / self.Splitters;
     self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",self.Each];
@@ -115,10 +122,12 @@
     self.TableNumberTextField.text = @"";
     self.AmountTextField.text = @"";
     self.TipTextField.text = @"";
+    
     self.TotalLabel.text = [NSString stringWithFormat:@"Total: £"];
-    self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £0.00"];
     self.SplittersSliderOutlet.value = 1 ;
     self.SplittersLabel.text = @"Splitters: 1";
+    self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £0.00"];
+    
     //add switch = off
 }
 

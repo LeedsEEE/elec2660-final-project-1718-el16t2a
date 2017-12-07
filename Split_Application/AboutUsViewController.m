@@ -35,10 +35,10 @@
 
 -(IBAction)MakePhoneCall:(id)sender {
     
-    // NSURL *URL = [NSURL URLWithString:@"tel:01132434444"];
-    // [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:01132434444"] options:@{} completionHandler:nil];
+    NSURL *URL = [NSURL URLWithString:@"tel:01132434444"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:01132434444"] options:@{} completionHandler:nil];
     
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"te://01132434444"]]; //@"telprompt:
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"te://01132434444"]]; //@"telprompt:
     
     
     
