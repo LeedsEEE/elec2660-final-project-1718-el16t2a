@@ -11,6 +11,7 @@
 @interface AboutUsViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *DescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *AddressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *HoursLabel;
 @property (weak, nonatomic) IBOutlet UILabel *TelephoneLabel;
 

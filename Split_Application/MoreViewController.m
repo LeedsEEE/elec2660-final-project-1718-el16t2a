@@ -36,7 +36,7 @@
 
 ///////////////Code for the textfield and the table view/////////////////////////////
 
-- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell1"];
     
@@ -84,7 +84,7 @@
 ///////////////////////////////////////////////////////////////////////////////////
 
 
-- (IBAction)AddWasPressed:(UIButton *)sender {
+- (IBAction)AddWasPressed:(id)sender {
     
     [arrayAddData addObject:self.NotesTextField.text];
     [self.NotesTableView reloadData];
@@ -95,18 +95,19 @@
 - (IBAction)DeleteWasPressed:(UIButton *)sender {
     
     sender.selected = !sender.selected; //! = not
+    
     [self.NotesTableView setEditing:sender.selected animated:YES];
     
     if(arrayDeleteData.count) {
         
-        for (NSString *note in arrayDeleteData) {
+        for (NSString *str in arrayDeleteData) {
             
-            [arrayDeleteData removeObject: note];
+            [arrayAddData removeObject: str];
             
         }
         
-        [arrayDeleteData removeAllObjects];
-        [self.NotesTableView reloadData];
+        [arrayDeleteData removeAllObjects]; // deletes selected notes
+        [self.NotesTableView reloadData]; //reload data to see if there's notes to display
     }
 }
 

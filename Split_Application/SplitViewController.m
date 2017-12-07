@@ -117,6 +117,8 @@
     self.TipTextField.text = @"";
     self.TotalLabel.text = [NSString stringWithFormat:@"Total: £"];
     self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £0.00"];
+    self.SplittersSliderOutlet.value = 1 ;
+    self.SplittersLabel.text = @"Splitters: 1";
     //add switch = off
 }
 

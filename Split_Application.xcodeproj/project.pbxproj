@@ -31,6 +31,7 @@
 		F57CA0E11FD6CFDA00DA20EE /* 1 user.png in Resources */ = {isa = PBXBuildFile; fileRef = F57CA0E01FD6CFDA00DA20EE /* 1 user.png */; };
 		F57CA9721FD57D3100FA45F7 /* BurgersDrawing.png in Resources */ = {isa = PBXBuildFile; fileRef = F57CA9711FD57D3100FA45F7 /* BurgersDrawing.png */; };
 		F5929D311FD82C3F009C943B /* Icon-Small-50x50@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5929D301FD82C3D009C943B /* Icon-Small-50x50@1x.png */; };
+		F5929D361FD8B673009C943B /* MapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5929D351FD8B673009C943B /* MapsViewController.m */; };
 		F5C61FBE1FCF494300604CDA /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */; };
 		F5C61FC11FCF494300604CDA /* Menu_Element.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FC01FCF494300604CDA /* Menu_Element.m */; };
 		F5C61FC41FCF494300604CDA /* MElementDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C61FC31FCF494300604CDA /* MElementDataModel.m */; };
@@ -96,6 +97,8 @@
 		F57CA0E01FD6CFDA00DA20EE /* 1 user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1 user.png"; sourceTree = "<group>"; };
 		F57CA9711FD57D3100FA45F7 /* BurgersDrawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BurgersDrawing.png; sourceTree = "<group>"; };
 		F5929D301FD82C3D009C943B /* Icon-Small-50x50@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50x50@1x.png"; sourceTree = "<group>"; };
+		F5929D341FD8B673009C943B /* MapsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapsViewController.h; sourceTree = "<group>"; };
+		F5929D351FD8B673009C943B /* MapsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsViewController.m; sourceTree = "<group>"; };
 		F5C61FBC1FCF494300604CDA /* MenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		F5C61FBD1FCF494300604CDA /* MenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		F5C61FBF1FCF494300604CDA /* Menu_Element.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu_Element.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				F50A59B91FD5F9D900524EA1 /* icon waiter.png */,
 				F50A59BB1FD61ACD00524EA1 /* AboutUsViewController.h */,
 				F50A59BC1FD61ACD00524EA1 /* AboutUsViewController.m */,
+				F5929D341FD8B673009C943B /* MapsViewController.h */,
+				F5929D351FD8B673009C943B /* MapsViewController.m */,
 				F50A59BE1FD6269400524EA1 /* WebsiteViewController.h */,
 				F50A59BF1FD6269400524EA1 /* WebsiteViewController.m */,
 				F52B892C1FC98DC0009D470E /* Assets.xcassets */,
@@ -382,6 +387,7 @@
 				F50A59BD1FD61ACD00524EA1 /* AboutUsViewController.m in Sources */,
 				F50A59C01FD6269400524EA1 /* WebsiteViewController.m in Sources */,
 				F50A59B81FD5E78E00524EA1 /* MenuTableHeaderView.m in Sources */,
+				F5929D361FD8B673009C943B /* MapsViewController.m in Sources */,
 				F5C61FC41FCF494300604CDA /* MElementDataModel.m in Sources */,
 				F5C61FCC1FCF6EED00604CDA /* ViewControllerMenu.m in Sources */,
 			);
