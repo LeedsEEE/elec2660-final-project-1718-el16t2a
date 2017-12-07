@@ -268,7 +268,7 @@
         Menu_Element * drink3 = [[Menu_Element alloc] init];
         drink3.type = @"Drinks";
         drink3.name = @"MILKSHAKES";
-        drink3.ingredients = @"SALTED CARAMEL, REESE'S PEANUT BUTTERCUP, BANANA, OREO®, VANILLA, CHOCOLATE, STRAWBERRY";
+        drink3.ingredients = @"SALTED CARAMEL, REESE'S PEANUT BUTTERCUP, BANANA, OREO, VANILLA, CHOCOLATE, STRAWBERRY";
         drink3.price = @"£ 4.75";
         
         // Now we need to add the different salads to the array

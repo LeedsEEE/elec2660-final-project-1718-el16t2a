@@ -6,6 +6,10 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
+
+// this file is for the picture at the header of the table 
+
+
 #import "MenuTableHeaderView.h"
 
 @interface MenuTableHeaderView () {

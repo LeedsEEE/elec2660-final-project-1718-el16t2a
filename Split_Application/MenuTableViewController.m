@@ -65,6 +65,50 @@
     else return 0;
 }
 
+/*
+#pragma mark to change background color of sections
+
+- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)] ;      //autorelease];
+    if (section == 0)
+        [headerView setBackgroundColor:[UIColor redColor]];
+    
+    if (section == 1)
+        [headerView setBackgroundColor:[UIColor redColor]];
+    
+    if (section == 2)
+        [headerView setBackgroundColor:[UIColor redColor]];
+    
+    if (section == 3)
+        [headerView setBackgroundColor:[UIColor redColor]];
+    
+    if (section == 4)
+        [headerView setBackgroundColor:[UIColor redColor]];
+
+    if (section == 5)
+        [headerView setBackgroundColor:[UIColor redColor]];
+    
+    else {}
+   //     [headerView setBackgroundColor:[UIColor clearColor]];
+    return headerView;
+}
+*/
+#pragma mark to change color of text in sections
+
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    if ( [view isKindOfClass:[UITableViewHeaderFooterView class]] ) {
+        
+        UITableViewHeaderFooterView *tableViewHeaderFooterView = (UITableViewHeaderFooterView *) view;
+        
+        tableViewHeaderFooterView.textLabel.textColor  = [UIColor brownColor];
+        //tableViewHeaderFooterView.textLabel.backgroundColor =[UIColor greenColor];
+        
+    }
+}
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
