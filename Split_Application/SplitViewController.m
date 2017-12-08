@@ -44,10 +44,6 @@
     self.AmountTextField.delegate = self;
     self.TableNumberTextField.delegate = self;
     
-    self.TableNumberArray = [NSMutableArray array];
-    self.BillAmountArray = [NSMutableArray array];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -163,18 +159,5 @@
     
 }
 
-- (IBAction)didPressSave:(id)sender {
-    
-    NSString *tempTableNumber = self.TableNumberTextField.text;
-    [self.TableNumberArray addObject:tempTableNumber];
-    
-    //[self.BillAmountArray addObject:self.Total];
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    [defaults setObject:self.TableNumberArray forKey:@"kOrderNumberArray"];
-    [defaults setObject:self.BillAmountArray forKey:@"kBillAmountArray"];
-    
-}
 
 @end

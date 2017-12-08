@@ -33,9 +33,6 @@
 @property float Each;
 @property float DiscountedEach;
 
-@property NSMutableArray *TableNumberArray;
-@property NSMutableArray * BillAmountArray;
-
 //setting up the connections from the view controller in the storyboard
 
 @property (weak, nonatomic) IBOutlet UITextField *dateSelectionTextField;
@@ -51,8 +48,6 @@
 @property (weak, nonatomic) IBOutlet UISlider *SplittersSliderOutlet;
 
 -(IBAction)didPressClear:(id)sender;
-
-- (IBAction)didPressSave:(id)sender;
 
 - (IBAction)didPressBackground:(id)sender;
 

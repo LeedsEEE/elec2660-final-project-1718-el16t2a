@@ -24,7 +24,6 @@
 		F52B89331FC98DC0009D470E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89321FC98DC0009D470E /* main.m */; };
 		F52B893D1FC98DC0009D470E /* Split_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B893C1FC98DC0009D470E /* Split_ApplicationTests.m */; };
 		F52B89481FC98DC0009D470E /* Split_ApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B89471FC98DC0009D470E /* Split_ApplicationUITests.m */; };
-		F52B895D1FC99944009D470E /* BillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895C1FC99944009D470E /* BillsViewController.m */; };
 		F52B89601FC99985009D470E /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B895F1FC99985009D470E /* MoreViewController.m */; };
 		F57CA0DF1FD6CFA600DA20EE /* multiple users.png in Resources */ = {isa = PBXBuildFile; fileRef = F57CA0DE1FD6CFA500DA20EE /* multiple users.png */; };
 		F57CA0E11FD6CFDA00DA20EE /* 1 user.png in Resources */ = {isa = PBXBuildFile; fileRef = F57CA0E01FD6CFDA00DA20EE /* 1 user.png */; };
@@ -88,8 +87,6 @@
 		F52B89431FC98DC0009D470E /* Split_ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Split_ApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52B89471FC98DC0009D470E /* Split_ApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Split_ApplicationUITests.m; sourceTree = "<group>"; };
 		F52B89491FC98DC0009D470E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F52B895B1FC99944009D470E /* BillsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillsViewController.h; sourceTree = "<group>"; };
-		F52B895C1FC99944009D470E /* BillsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillsViewController.m; sourceTree = "<group>"; };
 		F52B895E1FC99985009D470E /* MoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		F52B895F1FC99985009D470E /* MoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		F57CA0DE1FD6CFA500DA20EE /* multiple users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "multiple users.png"; sourceTree = "<group>"; };
@@ -192,8 +189,6 @@
 				F52B89271FC98DC0009D470E /* SplitViewController.m */,
 				F57CA0E01FD6CFDA00DA20EE /* 1 user.png */,
 				F57CA0DE1FD6CFA500DA20EE /* multiple users.png */,
-				F52B895B1FC99944009D470E /* BillsViewController.h */,
-				F52B895C1FC99944009D470E /* BillsViewController.m */,
 				F52B895E1FC99985009D470E /* MoreViewController.h */,
 				F52B895F1FC99985009D470E /* MoreViewController.m */,
 				F50A59B91FD5F9D900524EA1 /* icon waiter.png */,
@@ -376,7 +371,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52B895D1FC99944009D470E /* BillsViewController.m in Sources */,
 				F52B89281FC98DC0009D470E /* SplitViewController.m in Sources */,
 				F52B89221FC98DC0009D470E /* AppDelegate.m in Sources */,
 				F5C6DEC11FCD4A9700B5DAAE /* LoginViewController.m in Sources */,
