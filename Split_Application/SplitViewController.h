@@ -10,6 +10,9 @@
 
 @interface SplitViewController : UIViewController <UITextFieldDelegate>
 
+{
+    UIDatePicker *datePicker;
+}
 
 // Defining variables that will be used in this file.
 // Some of them have connections from the ViewController in main.storyboard.
@@ -34,6 +37,8 @@
 @property NSMutableArray * BillAmountArray;
 
 //setting up the connections from the view controller in the storyboard
+
+@property (weak, nonatomic) IBOutlet UITextField *dateSelectionTextField;
 
 @property (weak, nonatomic) IBOutlet UITextField *TableNumberTextField;
 @property (weak, nonatomic) IBOutlet UITextField *AmountTextField;

@@ -19,6 +19,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    ///////////////DatePicker Configuration///////////////////////
+    
+    datePicker = [[UIDatePicker alloc] init];
+    datePicker.datePickerMode = UIDatePickerModeDate;
+    [self.dateSelectionTextField setInputView:datePicker];
+    
+    UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
+    [toolBar setTintColor:[UIColor grayColor]];
+    UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain   target:self action:@selector(ShowSelectedDate)];
+    UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
+    [self.dateSelectionTextField setInputAccessoryView:toolBar];
+    
+    //////////////////////////////////////////
+    
     self.SplittersSliderOutlet.value = 1 ;
     
     [self SplittersSlider:self.SplittersSliderOutlet]; // send message to get splitter label to display 1
@@ -40,6 +55,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)ShowSelectedDate { //shows selected date from picker in textfield
+    
+    NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"dd/MMM/YYYY hh:min a"];
+    self.dateSelectionTextField.text=[NSString stringWithFormat:@"%@",[formatter stringFromDate:datePicker.date]];
+    [self.dateSelectionTextField resignFirstResponder];
+}
 
 //ckecks which textfield is being used, allows to calculate total automatically
 - (void) textFieldDidEndEditing:(UITextField *)textField {
@@ -121,6 +143,8 @@
 }
 
 -(IBAction)didPressClear:(id)sender { // Clears all the information
+    
+    self.dateSelectionTextField.text = @"";
     
     self.TableNumberTextField.text = @"";
     self.AmountTextField.text = @"";
