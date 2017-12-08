@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BillsViewController : UIViewController
+@interface BillsViewController : UIViewController <UITableViewDataSource , UITableViewDelegate>
+
+@property NSMutableArray *LoadTableNumberArray;
+@property NSMutableArray *LoadBillAmountArray;
+
+@property (weak, nonatomic) IBOutlet UITableView *SavedBillsTableView;
 
 @end

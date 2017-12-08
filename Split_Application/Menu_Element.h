@@ -12,6 +12,10 @@
 
 @interface Menu_Element : NSObject
 
+
+// Defining variables that will be used in this file.
+// Some of them have connections from the ViewController in main.storyboard
+
 @property (strong,nonatomic) NSString *type;
 @property (strong,nonatomic) NSString *name;
 @property (strong,nonatomic) NSString *ingredients;
@@ -20,4 +24,4 @@
 @end
 
 
-// Now that we have our class, we need to create a data model to store our information
+// Now that we have our class, we need to create a data model to store our information in.

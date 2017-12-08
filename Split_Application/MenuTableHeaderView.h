@@ -16,4 +16,4 @@
 
 @end
 
-// this file is created to add a picture header in the table view
+// This file is created to add a picture header in the table view.

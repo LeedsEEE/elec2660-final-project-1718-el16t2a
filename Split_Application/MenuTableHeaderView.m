@@ -7,7 +7,7 @@
 //
 
 
-// this file is for the picture at the header of the table 
+// This file is for the picture at the header of the table.
 
 
 #import "MenuTableHeaderView.h"
@@ -15,10 +15,10 @@
 @interface MenuTableHeaderView () {
     UILabel *label;      //writing text on top of the image
 }
+
 @end
 
 @implementation MenuTableHeaderView
-
 
 -(id) initWithText : (NSString *) text; {
     
@@ -30,7 +30,6 @@
         
         label.textColor = [UIColor whiteColor];
         label.backgroundColor = [UIColor clearColor];
-        //label.font = [UIFont systemFontSize: 20];
         label.text = text;
         label.numberOfLines = 1;
         [self addSubview:label];

@@ -6,6 +6,8 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
+// This file will hold the details/data of the elements in the menu.
+
 #import "MElementDataModel.h"
 
 @implementation MElementDataModel
@@ -45,14 +47,6 @@
         [self.Appetizers addObject:App3]; //index 3
         
         ////////////////////////////////////SALADS////////////////////////////////////////////////
-        
-       /* self.Salads = [NSMutableArray array]; //creates an empty array for us to fill
-        Menu_Element * salad1 = [[Menu_Element alloc] init];
-        salad1.type = @"";
-        salad1.name = @"";
-        salad1.ingredients = @"";
-        salad1.price = @"";
-        */
         
         self.Salads = [NSMutableArray array]; //creates an empty array for us to fill
         Menu_Element * salad1 = [[Menu_Element alloc] init];

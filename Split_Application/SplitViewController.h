@@ -10,10 +10,13 @@
 
 @interface SplitViewController : UIViewController <UITextFieldDelegate>
 
-//initialising the "variables" we will use
+
+// Defining variables that will be used in this file.
+// Some of them have connections from the ViewController in main.storyboard.
+
 
 @property NSInteger TableNumber;
-//@property Date;
+
 @property float Bill;
 @property float DiscountedBill;
 
@@ -26,6 +29,9 @@
 
 @property float Each;
 @property float DiscountedEach;
+
+@property NSMutableArray *TableNumberArray;
+@property NSMutableArray * BillAmountArray;
 
 //setting up the connections from the view controller in the storyboard
 
@@ -40,6 +46,8 @@
 @property (weak, nonatomic) IBOutlet UISlider *SplittersSliderOutlet;
 
 -(IBAction)didPressClear:(id)sender;
+
+- (IBAction)didPressSave:(id)sender;
 
 - (IBAction)didPressBackground:(id)sender;
 

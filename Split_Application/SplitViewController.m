@@ -29,6 +29,9 @@
     self.AmountTextField.delegate = self;
     self.TableNumberTextField.delegate = self;
     
+    self.TableNumberArray = [NSMutableArray array];
+    self.BillAmountArray = [NSMutableArray array];
+    
     
 }
 
@@ -51,7 +54,7 @@
      
         [self.AmountTextField endEditing:YES];
         
-        self.Bill = [self.AmountTextField.text doubleValue]; // associate typed value to the selected variable
+        self.Bill = [self.AmountTextField.text doubleValue]; // associate typed value in textfield to the Bill variable.
     
     }
     
@@ -59,7 +62,7 @@
         
         [self.TipTextField endEditing:YES];
         
-        self.Tip = [self.TipTextField.text doubleValue]; // associate typed value to the selected variable
+        self.Tip = [self.TipTextField.text doubleValue]; // associate typed value in textfield to the Tip variable.
         
         self.Total = (self.Bill + self.Tip);
         
@@ -117,18 +120,37 @@
     self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £%.2f ",self.Each];
 }
 
--(IBAction)didPressClear:(id)sender {
+-(IBAction)didPressClear:(id)sender { // Clears all the information
     
     self.TableNumberTextField.text = @"";
     self.AmountTextField.text = @"";
+    self.Bill= 0;
+    
     self.TipTextField.text = @"";
+    self.Tip = 0;
     
     self.TotalLabel.text = [NSString stringWithFormat:@"Total: £"];
+    self.Total=0;
+    
     self.SplittersSliderOutlet.value = 1 ;
     self.SplittersLabel.text = @"Splitters: 1";
+    
     self.EachLabel.text= [NSString stringWithFormat:@"Per Person: £0.00"];
     
-    //add switch = off
+}
+
+- (IBAction)didPressSave:(id)sender {
+    
+    NSString *tempTableNumber = self.TableNumberTextField.text;
+    [self.TableNumberArray addObject:tempTableNumber];
+    
+    //[self.BillAmountArray addObject:self.Total];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setObject:self.TableNumberArray forKey:@"kOrderNumberArray"];
+    [defaults setObject:self.BillAmountArray forKey:@"kBillAmountArray"];
+    
 }
 
 @end

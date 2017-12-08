@@ -33,27 +33,11 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)MakePhoneCall:(id)sender {
+-(IBAction)MakePhoneCall:(id)sender { // leaves the application and makes a phone call to the specified number
     
     NSURL *URL = [NSURL URLWithString:@"tel:01132434444"];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:01132434444"] options:@{} completionHandler:nil];
     
-    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"te://01132434444"]]; //@"telprompt:
-    
-    
-    
-        
-        
-    }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
 
 @end

@@ -18,16 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.data = [[MElementDataModel alloc] init];
+    self.data = [[MElementDataModel alloc] init]; // initialises the data model array
     
     self.tableView.tableHeaderView = [[MenuTableHeaderView alloc] initWithText:@"Welcome To Byron"]; // writes this on the header view image
     
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,45 +59,15 @@
     else return 0;
 }
 
-/*
-#pragma mark to change background color of sections
-
-- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)] ;      //autorelease];
-    if (section == 0)
-        [headerView setBackgroundColor:[UIColor redColor]];
-    
-    if (section == 1)
-        [headerView setBackgroundColor:[UIColor redColor]];
-    
-    if (section == 2)
-        [headerView setBackgroundColor:[UIColor redColor]];
-    
-    if (section == 3)
-        [headerView setBackgroundColor:[UIColor redColor]];
-    
-    if (section == 4)
-        [headerView setBackgroundColor:[UIColor redColor]];
-
-    if (section == 5)
-        [headerView setBackgroundColor:[UIColor redColor]];
-    
-    else {}
-   //     [headerView setBackgroundColor:[UIColor clearColor]];
-    return headerView;
-}
-*/
 #pragma mark to change color of text in sections
 
-- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
-{
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    
     if ( [view isKindOfClass:[UITableViewHeaderFooterView class]] ) {
         
         UITableViewHeaderFooterView *tableViewHeaderFooterView = (UITableViewHeaderFooterView *) view;
         
         tableViewHeaderFooterView.textLabel.textColor  = [UIColor brownColor];
-        //tableViewHeaderFooterView.textLabel.backgroundColor =[UIColor greenColor];
         
     }
 }
@@ -265,41 +229,6 @@
             destinationViewController.element = tempMenu_element;
         }
     }
-
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 }
 

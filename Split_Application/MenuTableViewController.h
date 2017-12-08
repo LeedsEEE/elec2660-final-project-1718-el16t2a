@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MElementDataModel.h" //we import this file and also we create a property because in .m we will use its method
-#import "ViewControllerMenu.h" // we import this file to create a local data of the destination Viewcontroller
+#import "MElementDataModel.h" //We import this file and also we create a property because in .m we will use its method.
+#import "ViewControllerMenu.h" // We import this file to create a local data of the destination Viewcontroller.
+
 
 @interface MenuTableViewController : UITableViewController
 
-@property (strong,nonatomic) MElementDataModel *data; // let's acces the data we stored 
+
+// Defining variables that will be used in this file.
+// Some of them have connections from the ViewController in main.storyboard.
+
+@property (strong,nonatomic) MElementDataModel *data; // lets us acces the data we stored 
 
 @end

@@ -19,13 +19,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //self.WaiterNameLabel.text = username from login page
-    
     self.WaiterNameLabel.text = @"ALQAWASMI Tariq";
     self.WorkingHoursLabel.text = @"Working Hours:\n Weekdays: 14:00-18:00 \n Weekend: 10:00-18:00";
     
-    arrayAddData = [[NSMutableArray alloc] init];
-    arrayDeleteData = [[NSMutableArray alloc] init];
+    arrayAddData = [[NSMutableArray alloc] init];     // This array holds any note written in the text field.
+    arrayDeleteData = [[NSMutableArray alloc] init];  // This array will have the selected notes to delete.
     
 }
 
@@ -46,8 +44,9 @@
         
     }
     
-    cell.tintColor = [UIColor redColor];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", arrayAddData[indexPath.row]];
+    cell.tintColor = [UIColor redColor]; // ticks are in red color and show what is selected to be deleted.
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", arrayAddData[indexPath.row]]; // shows what's written in the TextField in the TableView
     
     return cell;
 }
@@ -65,13 +64,13 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [arrayDeleteData addObject:arrayAddData [indexPath.row]];
+    [arrayDeleteData addObject:arrayAddData [indexPath.row]];              // adds what's ArrayAddData in the arrayDeleteData
     
 }
 
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [arrayDeleteData removeObject:arrayAddData[indexPath.row]];
+    [arrayDeleteData removeObject:arrayAddData[indexPath.row]];            // removes object from the array
     
 }
 
@@ -86,7 +85,7 @@
 
 - (IBAction)AddWasPressed:(id)sender {
     
-    [arrayAddData addObject:self.NotesTextField.text];
+    [arrayAddData addObject:self.NotesTextField.text]; // adds what's written in the textField to the Array
     [self.NotesTableView reloadData];
     self.NotesTextField.text=@"";
     
@@ -100,9 +99,9 @@
     
     if(arrayDeleteData.count) {
         
-        for (NSString *str in arrayDeleteData) {
+        for (NSString *note in arrayDeleteData) {
             
-            [arrayAddData removeObject: str];
+            [arrayAddData removeObject: note];
             
         }
         
@@ -111,23 +110,18 @@
     }
 }
 
+
+// to logout user from application
 - (IBAction)LogoutPressed:(id)sender {
   
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+#pragma mark : to hide keyboard after finishing typing
 
-    
-
+-(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
 
 @end

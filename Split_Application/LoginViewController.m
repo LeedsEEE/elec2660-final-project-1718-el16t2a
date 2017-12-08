@@ -10,6 +10,9 @@
 
 @interface LoginViewController ()
 
+// Defining variables that will be used in this file.
+// Some of them have connections from the ViewController in main.storyboard
+
 @property (nonatomic,strong) NSString *username;
 @property (nonatomic,strong) NSString *password;
 @property (weak, nonatomic) IBOutlet UITextField *UsernameTextField;
@@ -34,11 +37,21 @@
     
 }
 
+-(void)viewWillAppear:(BOOL)animated { //This method is used because the viewDidLoad method only works once, it allows us initialise the textfields for the next login.
+    
+    [super viewWillAppear:animated];
+    
+    self.UsernameTextField.text = @"";
+    self.PasswordTextField.text = @"";
+    self.NotificationLabel.text = @"";
+    
+}
+
 - (IBAction)LoginPressed:(id)sender {              // When the user clicks the login button
     
-    BOOL isUsersEqual = [self.username isEqualToString:[self.UsernameTextField text]];
-    BOOL isPasswordsEqual = [self.password isEqualToString:[self.PasswordTextField text]];
-   // NSLog(@"%d  %d",isUsersEqual,isPasswordsEqual);
+    BOOL isUsersEqual = [self.username isEqualToString:[self.UsernameTextField text]]; //Compares if username set above matches the username typed in the usernameTextField.
+    
+    BOOL isPasswordsEqual = [self.password isEqualToString:[self.PasswordTextField text]]; //Compares if password set above matches the password typed in the passwordTextField.
     
     if (isUsersEqual && isPasswordsEqual) {       // When user enters the right details
         
@@ -69,14 +82,5 @@
     [self.view endEditing:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

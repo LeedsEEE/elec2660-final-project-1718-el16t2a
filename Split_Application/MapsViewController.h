@@ -10,6 +10,10 @@
 
 @interface MapsViewController : UIViewController
 
+
+// Defining variables that will be used in this file.
+// Some of them have connections from the ViewController in main.storyboard
+
 {
     IBOutlet UIWebView *MapWeb;
 }

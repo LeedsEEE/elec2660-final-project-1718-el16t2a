@@ -10,6 +10,9 @@
 
 @interface MoreViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
+// Defining variables that will be used in this file.
+// Some of them have connections from the ViewController in main.storyboard.
+
 {
     NSMutableArray *arrayAddData; // array that will store added notes
     NSMutableArray *arrayDeleteData; // array where notes will be deleted
