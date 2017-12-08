@@ -233,27 +233,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeE-cR-Ihb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeE-cR-Ihb">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="554" id="MWq-A4-Wb0"/>
+                                    <constraint firstAttribute="width" constant="375" id="mmZ-UC-swh"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="dEn-W3-wNv" kind="show" id="Ggi-dR-LM5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="XJ9-JI-zP7">
-                                <rect key="frame" x="67" y="223" width="240" height="237"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="XJ9-JI-zP7">
+                                <rect key="frame" x="67" y="223" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="S1S-Oo-f1C"/>
+                                    <constraint firstAttribute="height" constant="240" id="f8n-o4-nrA"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap the screen to add a new bill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZf-gE-eqp">
-                                <rect key="frame" x="60" y="139" width="247" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the screen to add a new bill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZf-gE-eqp">
+                                <rect key="frame" x="66.5" y="139" width="242" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DeE-cR-Ihb" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="5Dq-Ph-bLC"/>
+                            <constraint firstItem="ZZf-gE-eqp" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="75" id="HPd-rc-RAx"/>
+                            <constraint firstItem="DeE-cR-Ihb" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="S6o-nS-8Os"/>
+                            <constraint firstItem="XJ9-JI-zP7" firstAttribute="centerX" secondItem="DeE-cR-Ihb" secondAttribute="centerX" id="UH8-mE-Nu3"/>
+                            <constraint firstItem="XJ9-JI-zP7" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="67" id="aFi-m7-8FO"/>
+                            <constraint firstItem="XJ9-JI-zP7" firstAttribute="top" secondItem="ZZf-gE-eqp" secondAttribute="bottom" constant="63" id="oIW-AC-7ea"/>
+                            <constraint firstItem="ZZf-gE-eqp" firstAttribute="centerX" secondItem="DeE-cR-Ihb" secondAttribute="centerX" id="rHm-r1-9je"/>
+                            <constraint firstItem="DeE-cR-Ihb" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="yfe-1G-BIQ"/>
+                            <constraint firstItem="DeE-cR-Ihb" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="ynp-VQ-7ef"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jwb-2d-zy3"/>
@@ -605,13 +621,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="36m-nO-GZW">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36m-nO-GZW">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="554" id="coP-JL-aQf"/>
+                                    <constraint firstAttribute="width" constant="375" id="oJh-h3-LbB"/>
+                                </constraints>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="36m-nO-GZW" firstAttribute="top" secondItem="ELm-2v-6el" secondAttribute="top" id="20w-io-7MY"/>
+                            <constraint firstItem="36m-nO-GZW" firstAttribute="leading" secondItem="ELm-2v-6el" secondAttribute="leading" id="i2d-up-haE"/>
+                            <constraint firstItem="36m-nO-GZW" firstAttribute="trailing" secondItem="ELm-2v-6el" secondAttribute="trailing" id="i36-NA-BAU"/>
+                            <constraint firstItem="36m-nO-GZW" firstAttribute="bottom" secondItem="ELm-2v-6el" secondAttribute="bottom" id="tgN-jp-vwV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ELm-2v-6el"/>
                     </view>
                     <connections>
@@ -630,13 +655,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONd-XN-dVz">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONd-XN-dVz">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="554" id="BZG-Bh-fIP"/>
+                                    <constraint firstAttribute="width" constant="375" id="YaX-xU-5wl"/>
+                                </constraints>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ONd-XN-dVz" firstAttribute="top" secondItem="x7S-2g-PbB" secondAttribute="top" id="8o0-ee-3h9"/>
+                            <constraint firstItem="ONd-XN-dVz" firstAttribute="trailing" secondItem="x7S-2g-PbB" secondAttribute="trailing" id="Juy-X9-MeJ"/>
+                            <constraint firstItem="ONd-XN-dVz" firstAttribute="leading" secondItem="x7S-2g-PbB" secondAttribute="leading" id="fab-c9-FoQ"/>
+                            <constraint firstItem="ONd-XN-dVz" firstAttribute="bottom" secondItem="x7S-2g-PbB" secondAttribute="bottom" id="gC2-bo-fmj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="x7S-2g-PbB"/>
                     </view>
                     <connections>

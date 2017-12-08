@@ -30,8 +30,8 @@
 
 #pragma mark : to set username
 
-    self.username = @"1";                          // username
-    self.password = @"2";                          // password
+    self.username = @"Byron_Name";                          // username
+    self.password = @"name123";                          // password
     
     self.PasswordTextField.secureTextEntry = YES ; // When the user types in the password, letters turn into dots
     
